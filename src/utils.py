@@ -2,6 +2,7 @@
 import time
 import json
 import os
+from config.config import CODING_PAGE
 from pprint import pprint
 
 
@@ -43,11 +44,11 @@ def light_print_time_to_work(function):
     """
     def wrapper(*args):
         """ I  just easy decorator. I going to wrap your function"""
-        print(f"start function {function}", *args)
+        print(f"start function {function}")    # for debug use aslo    , *args)
         start_time = time.perf_counter()
         res = function(*args)  # it's our function with they arguments, and it must be returned
         end_time = time.perf_counter()
-        print(f"time taken for function {end_time - start_time}")
+        print(f"time taken for operation is {end_time - start_time}")
         return res
 
     return wrapper
@@ -62,15 +63,17 @@ def load_from_json_file(filename: str = './vacancy.json') -> dict:
     if not os.path.exists(filename):
         return {}  # we did not find file and need to return nothing
         # seriously we need to create ecxeption
-    with open(filename, 'r', encoding='utf-8') as fh:  # open file
-        data = json.load(fh)  # load data
+    with open(filename, 'r', encoding=CODING_PAGE) as fh:  # open file
+        #data = fh.read()  # load data
+        data = json.load(fh)
     return data
 
 
 @light_print_time_to_work
 def write_to_json_file(filename, *text):
-    with open(filename, "w") as f:
-        json.dump(*text, f)
+    with open(filename, "w", encoding=CODING_PAGE) as f:
+        json.dump(*text, f, ensure_ascii=False)
+        #f.write(str(text))
 
 
 
