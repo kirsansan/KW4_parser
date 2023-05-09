@@ -13,6 +13,12 @@ class Model(ABC):
         self.content = None
         self.content_for_print = None
 
+    def set_params(self, params):
+        """ Set params for searchin
+        format is {"text": "text for searching", "area": "area code"}"""
+        self.params = params
+
+
     def add_new_vacancy(self):
         vacancy = Vacancy()
         self.vacancy_list.append(vacancy)
@@ -39,24 +45,34 @@ class Model(ABC):
 
 
 class Model_HH(Model):
-    def __init__(self, params=None):
+    def __init__(self, params: dict = None):
+        """
+
+        :param params: {"text": "text for searching", "area": "area code"}
+        """
         super().__init__(params)
         self.connector = None
         self.content = None
+
 
     def get_data_from_API(self):
         self.connect_to_API()
         return self.content
 
     def connect_to_API(self):
+        """
+        we need to create request shuch as 'https://api.hh.ru/vacancies?text=java&area=1'
+        :return:
+        """
         url = "https://api.hh.ru/vacancies"
+        url += f"?text={self.params['text']}&area={self.params['area']}"
         headers = {"User-Agent": "K_ParserApp/1.0"}
         response = requests.get(url, headers=headers)
         if response.status_code == 200:
             #pprint(response.text)
             #self.content = json.dumps(response.text, indent=6, ensure_ascii=False)
             self.content = json.loads(response.text)
-        print("resp=", response)
+        print("HH API response is:", response)
 
 
 class Model_SuperJob(Model):

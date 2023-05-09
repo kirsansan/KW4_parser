@@ -3,7 +3,7 @@ from setuptools.config._validate_pyproject.formats import url
 from src.model import *
 
 if __name__ == '__main__':
-    m1 = Model_HH()
+    m1 = Model_HH({"text": "python", "area": 2})
     m1.get_data_from_API()
     #m1.print_content()
 
