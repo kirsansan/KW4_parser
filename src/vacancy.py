@@ -1,10 +1,10 @@
 class Vacancy:
 
-    def __init__(self, title="non title", salary=0):
+    def __init__(self, title="non title", desc="non description", salary=0, url="non url"):
         self.title = title
-        self.description = None
+        self.description = desc
         self.salary: int = salary
-        self.url = None
+        self.url = url
 
     def __str__(self):
         return f"{self.title} with salary {self.salary}"

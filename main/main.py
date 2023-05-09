@@ -1,3 +1,5 @@
+from setuptools.config._validate_pyproject.formats import url
+
 from src.model import *
 
 if __name__ == '__main__':
@@ -10,5 +12,8 @@ if __name__ == '__main__':
     m1.add_new_vacancy()
     print(m1.vacancy_list)
 
-    v1 = Vacancy()
+    v1 = Vacancy("pioneer", salary=10_000, url="http://vk.ru")
     print(v1)
+    v2 = Vacancy("student", salary=20_000, url="http://ubuntu.org")
+    print(v2)
+    print(v2 > v1)
