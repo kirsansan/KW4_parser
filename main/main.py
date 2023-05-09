@@ -17,3 +17,5 @@ if __name__ == '__main__':
     v2 = Vacancy("student", salary=20_000, url="http://ubuntu.org")
     print(v2)
     print(v2 > v1)
+
+    m2.write_to_file()

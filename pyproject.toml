@@ -8,6 +8,7 @@ packages = [{include = "kw4_parser"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+python-dotenv = "^1.0.0"
 
 
 [tool.poetry.group.dev.dependencies]

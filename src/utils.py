@@ -70,7 +70,7 @@ def load_from_json_file(filename: str = './vacancy.json') -> dict:
 @light_print_time_to_work
 def write_to_json_file(filename, *text):
     with open(filename, "w") as f:
-        f.write(*text)
+        json.dump(*text, f)
 
 
 
