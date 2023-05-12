@@ -23,11 +23,11 @@ class Model(ABC):
         vacancy = Vacancy()
         self.vacancy_list.append(vacancy)
 
-    def write_to_file(self, filename=FILE_FOR_WRITE):
+    def write_to_file(self, filename=FILE_FOR_WRITE_RAW_DATA):
         if self.content is not None:
             src.utils.write_to_json_file(filename, self.content)
 
-    def load_from_file(self, filename=FILE_FOR_WRITE):
+    def load_from_file(self, filename=FILE_FOR_WRITE_RAW_DATA):
         self.content = src.utils.load_from_json_file(filename)
 
 

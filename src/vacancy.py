@@ -37,3 +37,6 @@ class Vacancy:
         if self.salary == other.salary:
             return True
         return False
+
+    def get_json(self):
+        return {"title": self.title}

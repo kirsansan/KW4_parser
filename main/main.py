@@ -14,3 +14,5 @@ if __name__ == '__main__':
     vl = m1.get_parsed_data()
     print(len(vl))
     [print(v) for v in vl]
+    saver = JSONSaver(FILE_FOR_VACANCY_JSON, vl)
+    saver.write()
