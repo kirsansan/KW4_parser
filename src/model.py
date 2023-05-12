@@ -82,7 +82,7 @@ class Model_HH(Model):
         vacancy_list: list[:Vacancy] = []
         for num, item in enumerate(self.content["items"]):
             vacancy = Vacancy()
-            print(num)
+            # print(num)
             try:
                 vacancy.title = item["name"]
                 vacancy.salary_min = item["salary"]["from"]

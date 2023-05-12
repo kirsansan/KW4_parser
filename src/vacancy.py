@@ -10,7 +10,7 @@ class Vacancy:
     def __str__(self):
         return f"{self.title} with salary {self.salary}"
 
-    def __str__(self):
+    def __repr__(self):
         return f"{self.__class__.__name__}('{self.title}', {self.salary_min}-{self.salary_max}, {self.url})"
 
     def __gt__(self, other):
