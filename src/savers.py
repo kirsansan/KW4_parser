@@ -23,9 +23,11 @@ class JSONSaver(ABCSaver):
         list_for_write = []
         for vac in self.datalist:
             list_for_write.append(vac.get_json())
-        # data = json.dumps(list_for_write, indent=2, ensure_ascii=False)
+        data = json.dumps(list_for_write, indent=2, ensure_ascii=False)
         with open(self.filename, 'w', encoding=CODING_PAGE) as f:
-            json.dump(list_for_write, f, ensure_ascii=False)
+            #json.dump(list_for_write, f, ensure_ascii=False)
+            f.write(data)
+
 
     def read(self):
         """

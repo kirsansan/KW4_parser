@@ -19,9 +19,9 @@ class Model(ABC):
         self.params = params
 
 
-    def add_new_vacancy(self):
-        vacancy = Vacancy()
-        self.vacancy_list.append(vacancy)
+    # def add_new_vacancy(self):
+    #     vacancy = Vacancy()
+    #     self.vacancy_list.append(vacancy)
 
     def write_to_file(self, filename=FILE_FOR_WRITE_RAW_DATA):
         if self.content is not None:
@@ -63,13 +63,14 @@ class Model_HH(Model):
         self.connect_to_API()
         return self.content
 
-    def connect_to_API(self):
+    def connect_to_API(self, start_page=0, per_page=100):
         """
         we need to create request shuch as 'https://api.hh.ru/vacancies?text=java&area=1'
         :return:
         """
         url = "https://api.hh.ru/vacancies"
         url += f"?text={self.params['text']}&area={self.params['area']}"
+        url += f"&page={start_page}&per_page={per_page}"
         headers = {"User-Agent": "K_ParserApp/1.0"}
         response = requests.get(url, headers=headers)
         if response.status_code == 200:
@@ -85,15 +86,32 @@ class Model_HH(Model):
             # print(num)
             try:
                 vacancy.title = item["name"]
-                vacancy.salary_min = item["salary"]["from"]
-                vacancy.salary_max = item["salary"]["to"]
-                vacancy.url = item["alternate_url"]
-                vacancy.description = item["description"]
+                #print('item keys', item.keys())
+                vacancy.url = item.get("alternate_url")
 
-            except Exception:
-                print("bad data it item")
+                if item.get("salary"):
+                    vacancy.salary_min = item["salary"].get("from")
+                    vacancy.salary_max = item["salary"].get("to")
+
+                if item.get("description"):
+                    print("item description is", item.get("description"))
+                vacancy.description = item["snippet"].get("requirement")
+
+            except Exception as err:
+                print("bad data in item", err)
             vacancy_list.append(vacancy)
+        self.vacancy_list.extend(vacancy_list)
         return vacancy_list
+
+
+    def get_big_data_step_by_step(self):
+        """
+        fill self.vacancy_list with API
+        no returns"""
+        for i in range(0, 20):
+            self.connect_to_API(i, 100)
+            self.get_parsed_data()
+
 
 
 class Model_SuperJob(Model):
