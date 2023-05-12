@@ -43,6 +43,10 @@ class Model(ABC):
     def get_data_from_API(self):
         pass
 
+    @abstractmethod
+    def get_parsed_data(self):
+        pass
+
 
 class Model_HH(Model):
     def __init__(self, params: dict = None):
@@ -74,6 +78,23 @@ class Model_HH(Model):
             self.content = json.loads(response.text)
         print("HH API response is:", response)
 
+    def get_parsed_data(self):
+        vacancy_list: list[:Vacancy] = []
+        for num, item in enumerate(self.content["items"]):
+            vacancy = Vacancy()
+            print(num)
+            try:
+                vacancy.title = item["name"]
+                vacancy.salary_min = item["salary"]["from"]
+                vacancy.salary_max = item["salary"]["to"]
+                vacancy.url = item["alternate_url"]
+                vacancy.description = item["description"]
+
+            except Exception:
+                print("bad data it item")
+            vacancy_list.append(vacancy)
+        return vacancy_list
+
 
 class Model_SuperJob(Model):
     def __init__(self, params=None):
@@ -87,6 +108,9 @@ class Model_SuperJob(Model):
         return self.content
 
     def connect_to_API(self):
+        ...
+
+    def get_parsed_data(self):
         ...
 
 
