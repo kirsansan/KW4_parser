@@ -6,6 +6,7 @@ from src.vacancy import Vacancy
 from src.utils import *
 from config.config import *
 
+
 class Model(ABC):
     def __init__(self, params=None):
         self.params = params
@@ -18,7 +19,6 @@ class Model(ABC):
         format is {"text": "text for searching", "area": "area code"}"""
         self.params = params
 
-
     # def add_new_vacancy(self):
     #     vacancy = Vacancy()
     #     self.vacancy_list.append(vacancy)
@@ -29,7 +29,6 @@ class Model(ABC):
 
     def load_from_file(self, filename=FILE_FOR_WRITE_RAW_DATA):
         self.content = src.utils.load_from_json_file(filename)
-
 
     def print_content(self):
         content_for_print = json.dumps(self.content, indent=6, ensure_ascii=False)
@@ -58,7 +57,6 @@ class Model_HH(Model):
         self.connector = None
         self.content = None
 
-
     def get_data_from_API(self):
         self.connect_to_API()
         return self.content
@@ -68,14 +66,14 @@ class Model_HH(Model):
         we need to create request shuch as 'https://api.hh.ru/vacancies?text=java&area=1'
         :return:
         """
-        url = "https://api.hh.ru/vacancies"
-        url += f"?text={self.params['text']}&area={self.params['area']}"
+        url = MAIN_REQUEST_FOR_HH
+        url += f"?enable_snippets=true&text={self.params['text']}&area={self.params['area']}"
         url += f"&page={start_page}&per_page={per_page}"
         headers = {"User-Agent": "K_ParserApp/1.0"}
         response = requests.get(url, headers=headers)
         if response.status_code == 200:
-            #pprint(response.text)
-            #self.content = json.dumps(response.text, indent=6, ensure_ascii=False)
+            # pprint(response.text)
+            # self.content = json.dumps(response.text, indent=6, ensure_ascii=False)
             self.content = json.loads(response.text)
         print("HH API response is:", response)
 
@@ -86,32 +84,29 @@ class Model_HH(Model):
             # print(num)
             try:
                 vacancy.title = item["name"]
-                #print('item keys', item.keys())
                 vacancy.url = item.get("alternate_url")
-
                 if item.get("salary"):
                     vacancy.salary_min = item["salary"].get("from")
                     vacancy.salary_max = item["salary"].get("to")
-
-                if item.get("description"):
-                    print("item description is", item.get("description"))
+                # if item.get("description"):
+                #    print("item description is", item.get("description"))
                 vacancy.description = item["snippet"].get("requirement")
-
             except Exception as err:
                 print("bad data in item", err)
             vacancy_list.append(vacancy)
         self.vacancy_list.extend(vacancy_list)
         return vacancy_list
 
-
-    def get_big_data_step_by_step(self):
+    def get_big_data_step_by_step(self, files_write_flag=False):
         """
         fill self.vacancy_list with API
         no returns"""
         for i in range(0, 20):
             self.connect_to_API(i, 100)
+            if files_write_flag:
+                part_filename = FILE_FOR_WRITE_RAW_DATA + "." + str(i)
+                self.write_to_file(part_filename)
             self.get_parsed_data()
-
 
 
 class Model_SuperJob(Model):
@@ -130,5 +125,3 @@ class Model_SuperJob(Model):
 
     def get_parsed_data(self):
         ...
-
-
