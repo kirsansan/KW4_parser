@@ -10,7 +10,7 @@ from src.decorators import light_print_time_to_work, print_time_to_work
 
 #@print_time_to_work(__name__)
 @light_print_time_to_work
-def load_from_json_file(filename: str = './vacancy.json') -> dict:
+def load_from_json_file(filename: str = '../data/vacancy.json') -> dict:
     """ load any information from json-format file and return it"""
 
     # load from file

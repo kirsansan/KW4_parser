@@ -68,9 +68,9 @@ class Model_HH(Model):
         """
         url = MAIN_REQUEST_FOR_HH
         url += f"?enable_snippets=true&text={self.params['text']}&area={self.params['area']}"
-        url += f"&page={start_page}&per_page={per_page}"
+        url_with_pages = url + f"&page={start_page}&per_page={per_page}"
         headers = {"User-Agent": "K_ParserApp/1.0"}
-        response = requests.get(url, headers=headers)
+        response = requests.get(url_with_pages, headers=headers)
         if response.status_code == 200:
             # pprint(response.text)
             # self.content = json.dumps(response.text, indent=6, ensure_ascii=False)
@@ -101,10 +101,14 @@ class Model_HH(Model):
         """
         fill self.vacancy_list with API
         no returns"""
-        for i in range(0, 20):
+        self.connect_to_API(19, 100)    # we need to know how many steps will be, so - see in tail
+        if self.content["items"] == []:
+            steps = self.content.get("pages")
+
+        for i in range(0, steps):
             self.connect_to_API(i, 100)
             if files_write_flag:
-                part_filename = FILE_FOR_WRITE_RAW_DATA + "." + str(i)
+                part_filename = FILE_FOR_WRITE_RAW_DATA + "." + str(i) + ".json"
                 self.write_to_file(part_filename)
             self.get_parsed_data()
 
