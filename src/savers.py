@@ -53,6 +53,7 @@ class JSONSaver(ABCSaver):
                     continue
         return vacancylist
 
+    @light_print_time_to_work
     def read(self):
         """
         read file (self.filename)
@@ -61,7 +62,7 @@ class JSONSaver(ABCSaver):
         if self.filename and os.path.isfile(self.filename):
             with open(self.filename, 'r', encoding=CODING_PAGE) as f:
                 data = json.load(f)
-            print("data", data)
+            # print("data", data)
         else:
             # raise(FileNotFoundException)
             print("File not found")

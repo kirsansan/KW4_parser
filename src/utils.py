@@ -27,10 +27,12 @@ def load_from_json_file(filename: str = '../data/vacancy.json') -> dict:
 def write_to_json_file(filename, *text):
     data = json.dumps(*text, indent=6, ensure_ascii=False)
     with open(filename, "w", encoding=CODING_PAGE) as f:
-        #json.dumps(data, f, ensure_ascii=False)
+        #json.dump(data, f, ensure_ascii=False)
         f.write(data)
 
 
+def sort_list_of_objects(objects: list):
+    objects.sort(reverse=True)
 
 
 

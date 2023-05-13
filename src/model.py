@@ -12,7 +12,8 @@ class Model(ABC):
         self.params = params
         self.vacancy_list: list[:Vacancy] = []
         self.content = None
-        self.content_for_print = None
+        self.content_inside: list = []
+        # self.content_for_print = None
 
     def set_params(self, params):
         """ Set params for searchin
@@ -24,14 +25,16 @@ class Model(ABC):
     #     self.vacancy_list.append(vacancy)
 
     def write_to_file(self, filename=FILE_FOR_WRITE_RAW_DATA):
-        if self.content is not None:
-            src.utils.write_to_json_file(filename, self.content)
+        if self.content_inside is not None:
+            # for vac in self.content_inside:
+            #     src.utils.write_to_json_file(filename, vac)
+            src.utils.write_to_json_file(filename, self.content_inside)
 
     def load_from_file(self, filename=FILE_FOR_WRITE_RAW_DATA):
-        self.content = src.utils.load_from_json_file(filename)
+        self.content_inside = src.utils.load_from_json_file(filename)
 
     def print_content(self):
-        content_for_print = json.dumps(self.content, indent=6, ensure_ascii=False)
+        content_for_print = json.dumps(self.content_inside, indent=6, ensure_ascii=False)
         print(content_for_print)
 
     @abstractmethod
@@ -75,11 +78,12 @@ class Model_HH(Model):
             # pprint(response.text)
             # self.content = json.dumps(response.text, indent=6, ensure_ascii=False)
             self.content = json.loads(response.text)
+            self.content_inside.extend(self.content.get("items"))
         print("HH API response is:", response)
 
     def get_parsed_data(self):
-        vacancy_list: list[:Vacancy] = []
-        for num, item in enumerate(self.content["items"]):
+        # vacancy_list: list[:Vacancy] = []
+        for item in self.content_inside:
             vacancy = Vacancy()
             # print(num)
             try:
@@ -93,24 +97,29 @@ class Model_HH(Model):
                 vacancy.description = item["snippet"].get("requirement")
             except Exception as err:
                 print("bad data in item", err)
-            vacancy_list.append(vacancy)
-        self.vacancy_list.extend(vacancy_list)
-        return vacancy_list
+            self.vacancy_list.append(vacancy)
+        #self.vacancy_list.extend(vacancy_list)
+        return self.vacancy_list
 
     def get_big_data_step_by_step(self, files_write_flag=False):
         """
         fill self.vacancy_list with API
         no returns"""
-        self.connect_to_API(19, 100)    # we need to know how many steps will be, so - see in tail
+        steps = 0
+        self.connect_to_API(19, 100)  # we need to know how many steps will be, so - see in tail
         if self.content["items"] == []:
             steps = self.content.get("pages")
 
+        if steps > 0:
+            pass
         for i in range(0, steps):
             self.connect_to_API(i, 100)
-            if files_write_flag:
-                part_filename = FILE_FOR_WRITE_RAW_DATA + "." + str(i) + ".json"
-                self.write_to_file(part_filename)
-            self.get_parsed_data()
+
+            # if files_write_flag:
+            #     part_filename = FILE_FOR_WRITE_RAW_DATA + "." + str(i) + ".json"
+            #     self.write_to_file(part_filename)
+        self.get_parsed_data()
+        self.write_to_file(FILE_FOR_WRITE_RAW_DATA)
 
 
 class Model_SuperJob(Model):
