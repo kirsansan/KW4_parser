@@ -51,11 +51,11 @@ class Model(ABC):
 
 
 class Model_HH(Model):
-    def __init__(self, params: dict = None):
-        """
-        :param params: {"text": "text for searching", "area": "area code"}
-        """
-        super().__init__(params)
+    # def __init__(self, params: dict = None):
+    #     """
+    #     :param params: {"text": "text for searching", "area": "area code"}
+    #     """
+    #     super().__init__(params)
         # self.connector = None
         # self.content = None
 
@@ -71,6 +71,7 @@ class Model_HH(Model):
         url = MAIN_REQUEST_FOR_HH
         url += f"?enable_snippets=true&text={self.params['text']}&area={self.params['area']}"
         url_with_pages = url + f"&page={start_page}&per_page={per_page}"
+        print(url_with_pages)
         headers = {"User-Agent": MY_APP_NAME}
         response = requests.get(url_with_pages, headers=headers)
         if response.status_code == 200:
@@ -118,14 +119,14 @@ class Model_HH(Model):
             #     part_filename = FILE_FOR_WRITE_RAW_DATA + "." + str(i) + ".json"
             #     self.write_to_file(part_filename)
         self.get_parsed_data()
-        self.write_to_file(FILE_FOR_WRITE_RAW_DATA)
+        if files_write_flag:
+            self.write_to_file(FILE_FOR_WRITE_RAW_DATA)
 
 
 class Model_SuperJob(Model):
-    def __init__(self, params=None):
-        super().__init__(params)
-        self.connector = None
-        self.content = None
+    # def __init__(self, params=None):
+    #     super().__init__(params)
+
 
     def get_data_from_API(self):
         self.connect_to_API()
@@ -138,17 +139,48 @@ class Model_SuperJob(Model):
         :return:
         """
         url = MAIN_REQUEST_FOR_SJ
-        url += f"/?&keyword={self.params['text']}"
+        url += f"/?&keyword={self.params['text']}&t={self.params['area']}"
         url_with_pages = url + f"&page={start_page}&count={count}"
+        print(url_with_pages)
         headers = {"X-Api-App-Id": SUPER_JOB_KEY}
         response = requests.get(url_with_pages, headers=headers)
         if response.status_code == 200:
             # pprint(response.text)
             # self.content = json.dumps(response.text, indent=6, ensure_ascii=False)
             self.content = json.loads(response.text)
-            self.content_inside = self.content
-            #self.content_inside.extend(self.content.get("objects"))
+            #self.content_inside = self.content
+            self.content_inside.extend(self.content.get("objects"))
         print("HH API response is:", response)
 
     def get_parsed_data(self):
-        ...
+        # vacancy_list: list[:Vacancy] = []
+        for item in self.content_inside:
+            vacancy = Vacancy()
+            # print(num)
+            try:
+                vacancy.title = item["profession"]
+                vacancy.url = item.get("link")
+                vacancy.salary_min = item["payment_from"] if item["payment_from"] else 0
+                vacancy.salary_max = item["payment_to"] if item["payment_to"] else 0
+                vacancy.description = item["candidat"]
+            except Exception as err:
+                print("bad data in item", err)
+            self.vacancy_list.append(vacancy)
+        #self.vacancy_list.extend(vacancy_list)
+        return self.vacancy_list
+
+    def get_big_data_step_by_step(self, files_write_flag=False):
+        """
+        fill self.vacancy_list with API
+        no returns"""
+        steps = 0
+        self.connect_to_API(0, 100)             # we need to know how many steps will be
+        if self.content["objects"] != []:
+            #print(self.content)
+            total: int = self.content.get("total")
+            steps = ( total // 100 ) + 1
+        for i in range(1, steps):
+            self.connect_to_API(i, 100)
+        self.get_parsed_data()
+        #if files_write_flag:
+        self.write_to_file(FILE_FOR_WRITE_RAW_DATA_SJ)
