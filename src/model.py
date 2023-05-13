@@ -178,9 +178,9 @@ class Model_SuperJob(Model):
         if self.content["objects"] != []:
             #print(self.content)
             total: int = self.content.get("total")
-            steps = ( total // 100 ) + 1
+            steps = ( total // 100 )
         for i in range(1, steps):
             self.connect_to_API(i, 100)
         self.get_parsed_data()
-        #if files_write_flag:
-        self.write_to_file(FILE_FOR_WRITE_RAW_DATA_SJ)
+        if files_write_flag:
+            self.write_to_file(FILE_FOR_WRITE_RAW_DATA_SJ)
