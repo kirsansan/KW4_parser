@@ -53,12 +53,11 @@ class Model(ABC):
 class Model_HH(Model):
     def __init__(self, params: dict = None):
         """
-
         :param params: {"text": "text for searching", "area": "area code"}
         """
         super().__init__(params)
-        self.connector = None
-        self.content = None
+        # self.connector = None
+        # self.content = None
 
     def get_data_from_API(self):
         self.connect_to_API()
@@ -66,13 +65,13 @@ class Model_HH(Model):
 
     def connect_to_API(self, start_page=0, per_page=100):
         """
-        we need to create request shuch as 'https://api.hh.ru/vacancies?text=java&area=1'
+        we need to create request such as 'https://api.hh.ru/vacancies?text=java&area=1'
         :return:
         """
         url = MAIN_REQUEST_FOR_HH
         url += f"?enable_snippets=true&text={self.params['text']}&area={self.params['area']}"
         url_with_pages = url + f"&page={start_page}&per_page={per_page}"
-        headers = {"User-Agent": "K_ParserApp/1.0"}
+        headers = {"User-Agent": MY_APP_NAME}
         response = requests.get(url_with_pages, headers=headers)
         if response.status_code == 200:
             # pprint(response.text)
@@ -90,8 +89,8 @@ class Model_HH(Model):
                 vacancy.title = item["name"]
                 vacancy.url = item.get("alternate_url")
                 if item.get("salary"):
-                    vacancy.salary_min = item["salary"].get("from")
-                    vacancy.salary_max = item["salary"].get("to")
+                    vacancy.salary_min = item["salary"].get("from") if item["salary"].get("from") else 0
+                    vacancy.salary_max = item["salary"].get("to") if item["salary"].get("to") else 0
                 # if item.get("description"):
                 #    print("item description is", item.get("description"))
                 vacancy.description = item["snippet"].get("requirement")
@@ -130,11 +129,26 @@ class Model_SuperJob(Model):
 
     def get_data_from_API(self):
         self.connect_to_API()
-        self.content = {"data": "SuperJob.somedata"}
         return self.content
 
-    def connect_to_API(self):
-        ...
+
+    def connect_to_API(self, start_page=5, count=100):
+        """
+        we need to create request such as 'https://api.superjob.ru/2.0/vacancies/?t=4&count=100'
+        :return:
+        """
+        url = MAIN_REQUEST_FOR_SJ
+        url += f"/?&keyword={self.params['text']}"
+        url_with_pages = url + f"&page={start_page}&count={count}"
+        headers = {"X-Api-App-Id": SUPER_JOB_KEY}
+        response = requests.get(url_with_pages, headers=headers)
+        if response.status_code == 200:
+            # pprint(response.text)
+            # self.content = json.dumps(response.text, indent=6, ensure_ascii=False)
+            self.content = json.loads(response.text)
+            self.content_inside = self.content
+            #self.content_inside.extend(self.content.get("objects"))
+        print("HH API response is:", response)
 
     def get_parsed_data(self):
         ...

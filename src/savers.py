@@ -36,15 +36,15 @@ class JSONSaver(ABCSaver):
             #json.dump(list_for_write, f, ensure_ascii=False)
             f.write(data)
 
-    def deserialize_json_to_vacancy(self, data):
+    def deserialize_json_to_vacancy(self, data) -> list[Vacancy]:
         vacancylist = []
         if data is not None:
-            for num, item in enumerate(data):
+            for item in data:
                 vacancy = Vacancy()
                 try:
                     vacancy.title = item["title"]
-                    vacancy.salary_min = item["salary_min"]
-                    vacancy.salary_max = item["salary_max"]
+                    vacancy.salary_min = item["salary_min"] if item["salary_min"] else 0
+                    vacancy.salary_max = item["salary_max"] if item["salary_max"] else 0
                     vacancy.url = item["url"]
                     vacancy.description = item["description"]
                     vacancylist.append(vacancy)
