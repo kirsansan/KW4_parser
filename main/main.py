@@ -30,7 +30,7 @@ def read_both_API():
     m1 = Model_HH({"text": "python", "area": 2})
     m1.get_big_data_step_by_step(files_write_flag=True)
     # m1.write_to_file(FILE_FOR_WRITE_RAW_DATA)
-    m4 = Model_SuperJob({"text": "python", "area": 0})
+    m4 = Model_SuperJob({"text": "python", "area": 2})
     m4.get_big_data_step_by_step(files_write_flag=True)
 
     vl = m1.get_parsed_data()

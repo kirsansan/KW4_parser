@@ -12,7 +12,6 @@ from src.decorators import light_print_time_to_work, print_time_to_work
 @light_print_time_to_work
 def load_from_json_file(filename: str = '../data/vacancy.json') -> dict:
     """ load any information from json-format file and return it"""
-
     # load from file
     if not os.path.exists(filename):
         return {}  # we did not find file and need to return nothing
@@ -25,6 +24,7 @@ def load_from_json_file(filename: str = '../data/vacancy.json') -> dict:
 
 @light_print_time_to_work
 def write_to_json_file(filename, *text):
+    """ just write data to json-format file"""
     data = json.dumps(*text, indent=6, ensure_ascii=False)
     with open(filename, "w", encoding=CODING_PAGE) as f:
         #json.dump(data, f, ensure_ascii=False)
@@ -32,6 +32,9 @@ def write_to_json_file(filename, *text):
 
 
 def sort_list_of_objects(objects: list):
+    """Sort list of objects.
+       Objects need to have ability to compare
+       In the distance future I want to include lambda to sort them"""
     objects.sort(reverse=True)
 
 
