@@ -97,101 +97,6 @@
                   }
             },
             {
-                  "id": "78089026",
-                  "premium": false,
-                  "name": "Team Lead в команду Общих сервисов",
-                  "department": null,
-                  "has_test": false,
-                  "response_letter_required": false,
-                  "area": {
-                        "id": "2",
-                        "name": "Санкт-Петербург",
-                        "url": "https://api.hh.ru/areas/2"
-                  },
-                  "salary": null,
-                  "type": {
-                        "id": "open",
-                        "name": "Открытая"
-                  },
-                  "address": {
-                        "city": "Санкт-Петербург",
-                        "street": "Цветочная улица",
-                        "building": "19",
-                        "lat": 59.887205,
-                        "lng": 30.329208,
-                        "description": null,
-                        "raw": "Санкт-Петербург, Цветочная улица, 19",
-                        "metro": {
-                              "station_name": "Московские ворота",
-                              "line_name": "Московско-Петроградская",
-                              "station_id": "15.221",
-                              "line_id": "15",
-                              "lat": 59.891788,
-                              "lng": 30.317873
-                        },
-                        "metro_stations": [
-                              {
-                                    "station_name": "Московские ворота",
-                                    "line_name": "Московско-Петроградская",
-                                    "station_id": "15.221",
-                                    "line_id": "15",
-                                    "lat": 59.891788,
-                                    "lng": 30.317873
-                              }
-                        ],
-                        "id": "2859413"
-                  },
-                  "response_url": null,
-                  "sort_point_distance": null,
-                  "published_at": "2023-05-10T14:38:09+0300",
-                  "created_at": "2023-05-10T14:38:09+0300",
-                  "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=78089026",
-                  "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/78089026?host=hh.ru",
-                  "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/78089026",
-                  "relations": [],
-                  "employer": {
-                        "id": "633069",
-                        "name": "Selectel",
-                        "url": "https://api.hh.ru/employers/633069",
-                        "alternate_url": "https://hh.ru/employer/633069",
-                        "logo_urls": {
-                              "90": "https://hhcdn.ru/employer-logo/3401369.png",
-                              "240": "https://hhcdn.ru/employer-logo/3401370.png",
-                              "original": "https://hhcdn.ru/employer-logo-original/740098.png"
-                        },
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=633069",
-                        "trusted": true
-                  },
-                  "snippet": {
-                        "requirement": "Опыт разработки на <highlighttext>Python</highlighttext> от трех лет, уровень ME+ или SE. Хорошие навыки построения архитектуры сложных систем. Опыт построения CI...",
-                        "responsibility": "Команда Общих Сервисов отвечает за ряд платформенных сервисов, обеспечивающих работу всего Облака Selectel. Микросервисы написаны на <highlighttext>Python</highlighttext> и Golang. "
-                  },
-                  "contacts": null,
-                  "schedule": null,
-                  "working_days": [],
-                  "working_time_intervals": [],
-                  "working_time_modes": [],
-                  "accept_temporary": false,
-                  "professional_roles": [
-                        {
-                              "id": "96",
-                              "name": "Программист, разработчик"
-                        }
-                  ],
-                  "accept_incomplete_resumes": false,
-                  "experience": {
-                        "id": "between3And6",
-                        "name": "От 3 до 6 лет"
-                  },
-                  "employment": {
-                        "id": "full",
-                        "name": "Полная занятость"
-                  }
-            },
-            {
                   "id": "79420723",
                   "premium": false,
                   "name": "Python developer (Senior)",
@@ -991,6 +896,75 @@
                   }
             },
             {
+                  "id": "73595104",
+                  "premium": true,
+                  "name": "Специалист службы поддержки с техническими знаниями (TOOLS)",
+                  "department": null,
+                  "has_test": false,
+                  "response_letter_required": false,
+                  "area": {
+                        "id": "2",
+                        "name": "Санкт-Петербург",
+                        "url": "https://api.hh.ru/areas/2"
+                  },
+                  "salary": {
+                        "from": 15000,
+                        "to": 39000,
+                        "currency": "RUR",
+                        "gross": false
+                  },
+                  "type": {
+                        "id": "open",
+                        "name": "Открытая"
+                  },
+                  "address": null,
+                  "response_url": null,
+                  "sort_point_distance": null,
+                  "published_at": "2023-05-12T17:26:59+0300",
+                  "created_at": "2023-05-12T17:26:59+0300",
+                  "archived": false,
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=73595104",
+                  "insider_interview": null,
+                  "url": "https://api.hh.ru/vacancies/73595104?host=hh.ru",
+                  "adv_response_url": null,
+                  "alternate_url": "https://hh.ru/vacancy/73595104",
+                  "relations": [],
+                  "employer": {
+                        "id": "9498112",
+                        "name": "Яндекс Крауд",
+                        "url": "https://api.hh.ru/employers/9498112",
+                        "alternate_url": "https://hh.ru/employer/9498112",
+                        "logo_urls": null,
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=9498112",
+                        "trusted": true
+                  },
+                  "snippet": {
+                        "requirement": "Умеете читать языки JavaScript, HTML и <highlighttext>Python</highlighttext>. Имеете высшее или неоконченное высшее образование (техническое будет плюсом). Помогали людям онлайн. ",
+                        "responsibility": "Отвечать на сообщения пользователей по почте и в чатах. Консультировать их о вопросах, связанных с Яндексом. Передавать информацию разработчикам и..."
+                  },
+                  "contacts": null,
+                  "schedule": null,
+                  "working_days": [],
+                  "working_time_intervals": [],
+                  "working_time_modes": [],
+                  "accept_temporary": false,
+                  "professional_roles": [
+                        {
+                              "id": "121",
+                              "name": "Специалист технической поддержки"
+                        }
+                  ],
+                  "accept_incomplete_resumes": false,
+                  "experience": {
+                        "id": "noExperience",
+                        "name": "Нет опыта"
+                  },
+                  "employment": {
+                        "id": "part",
+                        "name": "Частичная занятость"
+                  }
+            },
+            {
                   "id": "78442205",
                   "premium": false,
                   "name": "Senior C++ Developer",
@@ -1189,75 +1163,6 @@
                   }
             },
             {
-                  "id": "73595104",
-                  "premium": true,
-                  "name": "Специалист службы поддержки с техническими знаниями (TOOLS)",
-                  "department": null,
-                  "has_test": false,
-                  "response_letter_required": false,
-                  "area": {
-                        "id": "2",
-                        "name": "Санкт-Петербург",
-                        "url": "https://api.hh.ru/areas/2"
-                  },
-                  "salary": {
-                        "from": 15000,
-                        "to": 39000,
-                        "currency": "RUR",
-                        "gross": false
-                  },
-                  "type": {
-                        "id": "open",
-                        "name": "Открытая"
-                  },
-                  "address": null,
-                  "response_url": null,
-                  "sort_point_distance": null,
-                  "published_at": "2023-05-12T17:26:59+0300",
-                  "created_at": "2023-05-12T17:26:59+0300",
-                  "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=73595104",
-                  "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/73595104?host=hh.ru",
-                  "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/73595104",
-                  "relations": [],
-                  "employer": {
-                        "id": "9498112",
-                        "name": "Яндекс Крауд",
-                        "url": "https://api.hh.ru/employers/9498112",
-                        "alternate_url": "https://hh.ru/employer/9498112",
-                        "logo_urls": null,
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=9498112",
-                        "trusted": true
-                  },
-                  "snippet": {
-                        "requirement": "Умеете читать языки JavaScript, HTML и <highlighttext>Python</highlighttext>. Имеете высшее или неоконченное высшее образование (техническое будет плюсом). Помогали людям онлайн. ",
-                        "responsibility": "Отвечать на сообщения пользователей по почте и в чатах. Консультировать их о вопросах, связанных с Яндексом. Передавать информацию разработчикам и..."
-                  },
-                  "contacts": null,
-                  "schedule": null,
-                  "working_days": [],
-                  "working_time_intervals": [],
-                  "working_time_modes": [],
-                  "accept_temporary": false,
-                  "professional_roles": [
-                        {
-                              "id": "121",
-                              "name": "Специалист технической поддержки"
-                        }
-                  ],
-                  "accept_incomplete_resumes": false,
-                  "experience": {
-                        "id": "noExperience",
-                        "name": "Нет опыта"
-                  },
-                  "employment": {
-                        "id": "part",
-                        "name": "Частичная занятость"
-                  }
-            },
-            {
                   "id": "80005660",
                   "premium": false,
                   "name": "Application Security Engineer",
@@ -1448,6 +1353,74 @@
                   }
             },
             {
+                  "id": "80039464",
+                  "premium": false,
+                  "name": "Security Engineer (Security Champion in SW Development)",
+                  "department": null,
+                  "has_test": false,
+                  "response_letter_required": false,
+                  "area": {
+                        "id": "2",
+                        "name": "Санкт-Петербург",
+                        "url": "https://api.hh.ru/areas/2"
+                  },
+                  "salary": null,
+                  "type": {
+                        "id": "open",
+                        "name": "Открытая"
+                  },
+                  "address": null,
+                  "response_url": null,
+                  "sort_point_distance": null,
+                  "published_at": "2023-05-03T11:36:43+0300",
+                  "created_at": "2023-05-03T11:36:43+0300",
+                  "archived": false,
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80039464",
+                  "insider_interview": null,
+                  "url": "https://api.hh.ru/vacancies/80039464?host=hh.ru",
+                  "adv_response_url": null,
+                  "alternate_url": "https://hh.ru/vacancy/80039464",
+                  "relations": [],
+                  "employer": {
+                        "id": "1993194",
+                        "name": "YADRO",
+                        "url": "https://api.hh.ru/employers/1993194",
+                        "alternate_url": "https://hh.ru/employer/1993194",
+                        "logo_urls": {
+                              "original": "https://hhcdn.ru/employer-logo-original/784779.png",
+                              "240": "https://hhcdn.ru/employer-logo/3580008.png",
+                              "90": "https://hhcdn.ru/employer-logo/3580007.png"
+                        },
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1993194",
+                        "trusted": true
+                  },
+                  "snippet": {
+                        "requirement": "Чтение и глубокое понимание кода на языках программирования Golang, C, C++, <highlighttext>Python</highlighttext> и др.. Выявление небезопасных языковых конструкций, алгоритмов, разметка...",
+                        "responsibility": "Работа с результатами композиционного анализа исходного кода (SCA) - обработка результатов анализа SBOM (CVE, лицензии). Проведение статического анализа исходного коде (SAST..."
+                  },
+                  "contacts": null,
+                  "schedule": null,
+                  "working_days": [],
+                  "working_time_intervals": [],
+                  "working_time_modes": [],
+                  "accept_temporary": false,
+                  "professional_roles": [
+                        {
+                              "id": "96",
+                              "name": "Программист, разработчик"
+                        }
+                  ],
+                  "accept_incomplete_resumes": false,
+                  "experience": {
+                        "id": "moreThan6",
+                        "name": "Более 6 лет"
+                  },
+                  "employment": {
+                        "id": "full",
+                        "name": "Полная занятость"
+                  }
+            },
+            {
                   "id": "76678695",
                   "premium": false,
                   "name": "Senior Python developer",
@@ -1514,74 +1487,6 @@
                   "experience": {
                         "id": "between3And6",
                         "name": "От 3 до 6 лет"
-                  },
-                  "employment": {
-                        "id": "full",
-                        "name": "Полная занятость"
-                  }
-            },
-            {
-                  "id": "80039464",
-                  "premium": false,
-                  "name": "Security Engineer (Security Champion in SW Development)",
-                  "department": null,
-                  "has_test": false,
-                  "response_letter_required": false,
-                  "area": {
-                        "id": "2",
-                        "name": "Санкт-Петербург",
-                        "url": "https://api.hh.ru/areas/2"
-                  },
-                  "salary": null,
-                  "type": {
-                        "id": "open",
-                        "name": "Открытая"
-                  },
-                  "address": null,
-                  "response_url": null,
-                  "sort_point_distance": null,
-                  "published_at": "2023-05-03T11:36:43+0300",
-                  "created_at": "2023-05-03T11:36:43+0300",
-                  "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80039464",
-                  "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/80039464?host=hh.ru",
-                  "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/80039464",
-                  "relations": [],
-                  "employer": {
-                        "id": "1993194",
-                        "name": "YADRO",
-                        "url": "https://api.hh.ru/employers/1993194",
-                        "alternate_url": "https://hh.ru/employer/1993194",
-                        "logo_urls": {
-                              "original": "https://hhcdn.ru/employer-logo-original/784779.png",
-                              "240": "https://hhcdn.ru/employer-logo/3580008.png",
-                              "90": "https://hhcdn.ru/employer-logo/3580007.png"
-                        },
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1993194",
-                        "trusted": true
-                  },
-                  "snippet": {
-                        "requirement": "Чтение и глубокое понимание кода на языках программирования Golang, C, C++, <highlighttext>Python</highlighttext> и др.. Выявление небезопасных языковых конструкций, алгоритмов, разметка...",
-                        "responsibility": "Работа с результатами композиционного анализа исходного кода (SCA) - обработка результатов анализа SBOM (CVE, лицензии). Проведение статического анализа исходного коде (SAST..."
-                  },
-                  "contacts": null,
-                  "schedule": null,
-                  "working_days": [],
-                  "working_time_intervals": [],
-                  "working_time_modes": [],
-                  "accept_temporary": false,
-                  "professional_roles": [
-                        {
-                              "id": "96",
-                              "name": "Программист, разработчик"
-                        }
-                  ],
-                  "accept_incomplete_resumes": false,
-                  "experience": {
-                        "id": "moreThan6",
-                        "name": "Более 6 лет"
                   },
                   "employment": {
                         "id": "full",
@@ -5705,6 +5610,74 @@
                   }
             },
             {
+                  "id": "80012607",
+                  "premium": false,
+                  "name": "Algorithms and Models Engineer for L2+ layer (4G/LTE, 5G)",
+                  "department": null,
+                  "has_test": false,
+                  "response_letter_required": false,
+                  "area": {
+                        "id": "2",
+                        "name": "Санкт-Петербург",
+                        "url": "https://api.hh.ru/areas/2"
+                  },
+                  "salary": null,
+                  "type": {
+                        "id": "open",
+                        "name": "Открытая"
+                  },
+                  "address": null,
+                  "response_url": null,
+                  "sort_point_distance": null,
+                  "published_at": "2023-05-02T19:51:35+0300",
+                  "created_at": "2023-05-02T19:51:35+0300",
+                  "archived": false,
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80012607",
+                  "insider_interview": null,
+                  "url": "https://api.hh.ru/vacancies/80012607?host=hh.ru",
+                  "adv_response_url": null,
+                  "alternate_url": "https://hh.ru/vacancy/80012607",
+                  "relations": [],
+                  "employer": {
+                        "id": "1993194",
+                        "name": "YADRO",
+                        "url": "https://api.hh.ru/employers/1993194",
+                        "alternate_url": "https://hh.ru/employer/1993194",
+                        "logo_urls": {
+                              "original": "https://hhcdn.ru/employer-logo-original/784779.png",
+                              "240": "https://hhcdn.ru/employer-logo/3580008.png",
+                              "90": "https://hhcdn.ru/employer-logo/3580007.png"
+                        },
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1993194",
+                        "trusted": true
+                  },
+                  "snippet": {
+                        "requirement": "Strong communication skills and the ability to work in distributed teams. Experiences on programming in <highlighttext>Python</highlighttext>/Matlab/C/C++ and...",
+                        "responsibility": "Define, optimize and specify algorithms for 4G/LTE, 5G features for layers L2 and higher. "
+                  },
+                  "contacts": null,
+                  "schedule": null,
+                  "working_days": [],
+                  "working_time_intervals": [],
+                  "working_time_modes": [],
+                  "accept_temporary": false,
+                  "professional_roles": [
+                        {
+                              "id": "96",
+                              "name": "Программист, разработчик"
+                        }
+                  ],
+                  "accept_incomplete_resumes": false,
+                  "experience": {
+                        "id": "between3And6",
+                        "name": "От 3 до 6 лет"
+                  },
+                  "employment": {
+                        "id": "full",
+                        "name": "Полная занятость"
+                  }
+            },
+            {
                   "id": "79311823",
                   "premium": false,
                   "name": "Руководитель направления безопасной разработки",
@@ -5787,74 +5760,6 @@
                         {
                               "id": "116",
                               "name": "Специалист по информационной безопасности"
-                        }
-                  ],
-                  "accept_incomplete_resumes": false,
-                  "experience": {
-                        "id": "between3And6",
-                        "name": "От 3 до 6 лет"
-                  },
-                  "employment": {
-                        "id": "full",
-                        "name": "Полная занятость"
-                  }
-            },
-            {
-                  "id": "80012607",
-                  "premium": false,
-                  "name": "Algorithms and Models Engineer for L2+ layer (4G/LTE, 5G)",
-                  "department": null,
-                  "has_test": false,
-                  "response_letter_required": false,
-                  "area": {
-                        "id": "2",
-                        "name": "Санкт-Петербург",
-                        "url": "https://api.hh.ru/areas/2"
-                  },
-                  "salary": null,
-                  "type": {
-                        "id": "open",
-                        "name": "Открытая"
-                  },
-                  "address": null,
-                  "response_url": null,
-                  "sort_point_distance": null,
-                  "published_at": "2023-05-02T19:51:35+0300",
-                  "created_at": "2023-05-02T19:51:35+0300",
-                  "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80012607",
-                  "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/80012607?host=hh.ru",
-                  "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/80012607",
-                  "relations": [],
-                  "employer": {
-                        "id": "1993194",
-                        "name": "YADRO",
-                        "url": "https://api.hh.ru/employers/1993194",
-                        "alternate_url": "https://hh.ru/employer/1993194",
-                        "logo_urls": {
-                              "original": "https://hhcdn.ru/employer-logo-original/784779.png",
-                              "240": "https://hhcdn.ru/employer-logo/3580008.png",
-                              "90": "https://hhcdn.ru/employer-logo/3580007.png"
-                        },
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1993194",
-                        "trusted": true
-                  },
-                  "snippet": {
-                        "requirement": "Strong communication skills and the ability to work in distributed teams. Experiences on programming in <highlighttext>Python</highlighttext>/Matlab/C/C++ and...",
-                        "responsibility": "Define, optimize and specify algorithms for 4G/LTE, 5G features for layers L2 and higher. "
-                  },
-                  "contacts": null,
-                  "schedule": null,
-                  "working_days": [],
-                  "working_time_intervals": [],
-                  "working_time_modes": [],
-                  "accept_temporary": false,
-                  "professional_roles": [
-                        {
-                              "id": "96",
-                              "name": "Программист, разработчик"
                         }
                   ],
                   "accept_incomplete_resumes": false,
@@ -6717,6 +6622,74 @@
                   "experience": {
                         "id": "noExperience",
                         "name": "Нет опыта"
+                  },
+                  "employment": {
+                        "id": "full",
+                        "name": "Полная занятость"
+                  }
+            },
+            {
+                  "id": "80384212",
+                  "premium": false,
+                  "name": "Product analyst / Продуктовый аналитик",
+                  "department": null,
+                  "has_test": false,
+                  "response_letter_required": false,
+                  "area": {
+                        "id": "2",
+                        "name": "Санкт-Петербург",
+                        "url": "https://api.hh.ru/areas/2"
+                  },
+                  "salary": null,
+                  "type": {
+                        "id": "open",
+                        "name": "Открытая"
+                  },
+                  "address": null,
+                  "response_url": null,
+                  "sort_point_distance": null,
+                  "published_at": "2023-05-13T13:06:40+0300",
+                  "created_at": "2023-05-13T13:06:40+0300",
+                  "archived": false,
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80384212",
+                  "insider_interview": null,
+                  "url": "https://api.hh.ru/vacancies/80384212?host=hh.ru",
+                  "adv_response_url": null,
+                  "alternate_url": "https://hh.ru/vacancy/80384212",
+                  "relations": [],
+                  "employer": {
+                        "id": "6093775",
+                        "name": "Aston",
+                        "url": "https://api.hh.ru/employers/6093775",
+                        "alternate_url": "https://hh.ru/employer/6093775",
+                        "logo_urls": {
+                              "240": "https://hhcdn.ru/employer-logo/5829242.jpeg",
+                              "90": "https://hhcdn.ru/employer-logo/5829241.jpeg",
+                              "original": "https://hhcdn.ru/employer-logo-original/1052147.jpg"
+                        },
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=6093775",
+                        "trusted": true
+                  },
+                  "snippet": {
+                        "requirement": "...Tableau, DataLens, Superset, Google Data Studio, QlikView/Qlik Sense). Знание инструментов для автоматизации сбора, статистической обработки сырых данных (R/<highlighttext>Python</highlighttext>).",
+                        "responsibility": "Погрузиться в процессы и потребности продуктовых команд, собрать необходимые метрики и методики их расчета для оценки путей клиентов. "
+                  },
+                  "contacts": null,
+                  "schedule": null,
+                  "working_days": [],
+                  "working_time_intervals": [],
+                  "working_time_modes": [],
+                  "accept_temporary": false,
+                  "professional_roles": [
+                        {
+                              "id": "164",
+                              "name": "Продуктовый аналитик"
+                        }
+                  ],
+                  "accept_incomplete_resumes": false,
+                  "experience": {
+                        "id": "between1And3",
+                        "name": "От 1 года до 3 лет"
                   },
                   "employment": {
                         "id": "full",

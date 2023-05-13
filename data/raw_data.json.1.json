@@ -1714,6 +1714,101 @@
                   }
             },
             {
+                  "id": "67247216",
+                  "premium": false,
+                  "name": "QA/Тестировщик",
+                  "department": null,
+                  "has_test": false,
+                  "response_letter_required": false,
+                  "area": {
+                        "id": "2",
+                        "name": "Санкт-Петербург",
+                        "url": "https://api.hh.ru/areas/2"
+                  },
+                  "salary": null,
+                  "type": {
+                        "id": "open",
+                        "name": "Открытая"
+                  },
+                  "address": {
+                        "city": "Санкт-Петербург",
+                        "street": "проспект Обуховской Обороны",
+                        "building": "120с13",
+                        "lat": 59.864299,
+                        "lng": 30.475346,
+                        "description": null,
+                        "raw": "Санкт-Петербург, проспект Обуховской Обороны, 120с13",
+                        "metro": {
+                              "station_name": "Пролетарская",
+                              "line_name": "Невско-Василеостровская",
+                              "station_id": "16.234",
+                              "line_id": "16",
+                              "lat": 59.865,
+                              "lng": 30.47
+                        },
+                        "metro_stations": [
+                              {
+                                    "station_name": "Пролетарская",
+                                    "line_name": "Невско-Василеостровская",
+                                    "station_id": "16.234",
+                                    "line_id": "16",
+                                    "lat": 59.865,
+                                    "lng": 30.47
+                              }
+                        ],
+                        "id": "3290144"
+                  },
+                  "response_url": null,
+                  "sort_point_distance": null,
+                  "published_at": "2023-05-12T19:40:49+0300",
+                  "created_at": "2023-05-12T19:40:49+0300",
+                  "archived": false,
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=67247216",
+                  "insider_interview": null,
+                  "url": "https://api.hh.ru/vacancies/67247216?host=hh.ru",
+                  "adv_response_url": null,
+                  "alternate_url": "https://hh.ru/vacancy/67247216",
+                  "relations": [],
+                  "employer": {
+                        "id": "598722",
+                        "name": "ВНИИРА",
+                        "url": "https://api.hh.ru/employers/598722",
+                        "alternate_url": "https://hh.ru/employer/598722",
+                        "logo_urls": {
+                              "240": "https://hhcdn.ru/employer-logo/5530129.png",
+                              "90": "https://hhcdn.ru/employer-logo/5530128.png",
+                              "original": "https://hhcdn.ru/employer-logo-original/977323.png"
+                        },
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=598722",
+                        "trusted": true
+                  },
+                  "snippet": {
+                        "requirement": "Будет плюсом, если вы работали с большими данными и знаете <highlighttext>Python</highlighttext>. Знание и умение использования командной строки UNIX подобных систем. ",
+                        "responsibility": "Тестирование информационных систем планирования и использования воздушного пространства. Минимизация ошибок в работе системы и тестирование системы на соответствие заданным требованиям. "
+                  },
+                  "contacts": null,
+                  "schedule": null,
+                  "working_days": [],
+                  "working_time_intervals": [],
+                  "working_time_modes": [],
+                  "accept_temporary": false,
+                  "professional_roles": [
+                        {
+                              "id": "124",
+                              "name": "Тестировщик"
+                        }
+                  ],
+                  "accept_incomplete_resumes": false,
+                  "experience": {
+                        "id": "between1And3",
+                        "name": "От 1 года до 3 лет"
+                  },
+                  "employment": {
+                        "id": "full",
+                        "name": "Полная занятость"
+                  }
+            },
+            {
                   "id": "79927978",
                   "premium": false,
                   "name": "Head of HR IT",
@@ -1842,101 +1937,6 @@
                         {
                               "id": "121",
                               "name": "Специалист технической поддержки"
-                        }
-                  ],
-                  "accept_incomplete_resumes": false,
-                  "experience": {
-                        "id": "between1And3",
-                        "name": "От 1 года до 3 лет"
-                  },
-                  "employment": {
-                        "id": "full",
-                        "name": "Полная занятость"
-                  }
-            },
-            {
-                  "id": "67247216",
-                  "premium": false,
-                  "name": "QA/Тестировщик",
-                  "department": null,
-                  "has_test": false,
-                  "response_letter_required": false,
-                  "area": {
-                        "id": "2",
-                        "name": "Санкт-Петербург",
-                        "url": "https://api.hh.ru/areas/2"
-                  },
-                  "salary": null,
-                  "type": {
-                        "id": "open",
-                        "name": "Открытая"
-                  },
-                  "address": {
-                        "city": "Санкт-Петербург",
-                        "street": "проспект Обуховской Обороны",
-                        "building": "120с13",
-                        "lat": 59.864299,
-                        "lng": 30.475346,
-                        "description": null,
-                        "raw": "Санкт-Петербург, проспект Обуховской Обороны, 120с13",
-                        "metro": {
-                              "station_name": "Пролетарская",
-                              "line_name": "Невско-Василеостровская",
-                              "station_id": "16.234",
-                              "line_id": "16",
-                              "lat": 59.865,
-                              "lng": 30.47
-                        },
-                        "metro_stations": [
-                              {
-                                    "station_name": "Пролетарская",
-                                    "line_name": "Невско-Василеостровская",
-                                    "station_id": "16.234",
-                                    "line_id": "16",
-                                    "lat": 59.865,
-                                    "lng": 30.47
-                              }
-                        ],
-                        "id": "3290144"
-                  },
-                  "response_url": null,
-                  "sort_point_distance": null,
-                  "published_at": "2023-05-12T19:40:49+0300",
-                  "created_at": "2023-05-12T19:40:49+0300",
-                  "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=67247216",
-                  "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/67247216?host=hh.ru",
-                  "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/67247216",
-                  "relations": [],
-                  "employer": {
-                        "id": "598722",
-                        "name": "ВНИИРА",
-                        "url": "https://api.hh.ru/employers/598722",
-                        "alternate_url": "https://hh.ru/employer/598722",
-                        "logo_urls": {
-                              "240": "https://hhcdn.ru/employer-logo/5530129.png",
-                              "90": "https://hhcdn.ru/employer-logo/5530128.png",
-                              "original": "https://hhcdn.ru/employer-logo-original/977323.png"
-                        },
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=598722",
-                        "trusted": true
-                  },
-                  "snippet": {
-                        "requirement": "Будет плюсом, если вы работали с большими данными и знаете <highlighttext>Python</highlighttext>. Знание и умение использования командной строки UNIX подобных систем. ",
-                        "responsibility": "Тестирование информационных систем планирования и использования воздушного пространства. Минимизация ошибок в работе системы и тестирование системы на соответствие заданным требованиям. "
-                  },
-                  "contacts": null,
-                  "schedule": null,
-                  "working_days": [],
-                  "working_time_intervals": [],
-                  "working_time_modes": [],
-                  "accept_temporary": false,
-                  "professional_roles": [
-                        {
-                              "id": "124",
-                              "name": "Тестировщик"
                         }
                   ],
                   "accept_incomplete_resumes": false,
@@ -2499,6 +2499,169 @@
                   }
             },
             {
+                  "id": "78877310",
+                  "premium": false,
+                  "name": "Инженер по тестированию (PT CERT)",
+                  "department": null,
+                  "has_test": false,
+                  "response_letter_required": false,
+                  "area": {
+                        "id": "2",
+                        "name": "Санкт-Петербург",
+                        "url": "https://api.hh.ru/areas/2"
+                  },
+                  "salary": null,
+                  "type": {
+                        "id": "open",
+                        "name": "Открытая"
+                  },
+                  "address": null,
+                  "response_url": null,
+                  "sort_point_distance": null,
+                  "published_at": "2023-05-02T17:28:31+0300",
+                  "created_at": "2023-05-02T17:28:31+0300",
+                  "archived": false,
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=78877310",
+                  "insider_interview": null,
+                  "url": "https://api.hh.ru/vacancies/78877310?host=hh.ru",
+                  "adv_response_url": null,
+                  "alternate_url": "https://hh.ru/vacancy/78877310",
+                  "relations": [],
+                  "employer": {
+                        "id": "26624",
+                        "name": "Positive Technologies",
+                        "url": "https://api.hh.ru/employers/26624",
+                        "alternate_url": "https://hh.ru/employer/26624",
+                        "logo_urls": {
+                              "original": "https://hhcdn.ru/employer-logo-original/927260.png",
+                              "240": "https://hhcdn.ru/employer-logo/4149601.png",
+                              "90": "https://hhcdn.ru/employer-logo/4149600.png"
+                        },
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=26624",
+                        "trusted": true
+                  },
+                  "snippet": {
+                        "requirement": "Опыт работы с Docker. Опыт тестирования RabbitMQ. Опыт работы с VmWare vSphere. Опыт автоматизации с помощью <highlighttext>Python</highlighttext> 3, Pytest и...",
+                        "responsibility": "Проведение ручного функционального и регрессионного тестирования. Составление и актуализация тест дизайна, тест планов, тест репортов. Анализ отчетов по результатам прогона. "
+                  },
+                  "contacts": null,
+                  "schedule": null,
+                  "working_days": [],
+                  "working_time_intervals": [],
+                  "working_time_modes": [],
+                  "accept_temporary": false,
+                  "professional_roles": [
+                        {
+                              "id": "124",
+                              "name": "Тестировщик"
+                        }
+                  ],
+                  "accept_incomplete_resumes": false,
+                  "experience": {
+                        "id": "between1And3",
+                        "name": "От 1 года до 3 лет"
+                  },
+                  "employment": {
+                        "id": "full",
+                        "name": "Полная занятость"
+                  }
+            },
+            {
+                  "id": "80312991",
+                  "premium": false,
+                  "name": "Middle Python Developer",
+                  "department": null,
+                  "has_test": false,
+                  "response_letter_required": false,
+                  "area": {
+                        "id": "2",
+                        "name": "Санкт-Петербург",
+                        "url": "https://api.hh.ru/areas/2"
+                  },
+                  "salary": null,
+                  "type": {
+                        "id": "open",
+                        "name": "Открытая"
+                  },
+                  "address": {
+                        "city": "Санкт-Петербург",
+                        "street": "Заставская улица",
+                        "building": "22а",
+                        "lat": 59.888487,
+                        "lng": 30.327708,
+                        "description": null,
+                        "raw": "Санкт-Петербург, Заставская улица, 22а",
+                        "metro": {
+                              "station_name": "Московские ворота",
+                              "line_name": "Московско-Петроградская",
+                              "station_id": "15.221",
+                              "line_id": "15",
+                              "lat": 59.891788,
+                              "lng": 30.317873
+                        },
+                        "metro_stations": [
+                              {
+                                    "station_name": "Московские ворота",
+                                    "line_name": "Московско-Петроградская",
+                                    "station_id": "15.221",
+                                    "line_id": "15",
+                                    "lat": 59.891788,
+                                    "lng": 30.317873
+                              }
+                        ],
+                        "id": "230953"
+                  },
+                  "response_url": null,
+                  "sort_point_distance": null,
+                  "published_at": "2023-05-11T15:48:35+0300",
+                  "created_at": "2023-05-11T15:48:35+0300",
+                  "archived": false,
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80312991",
+                  "insider_interview": null,
+                  "url": "https://api.hh.ru/vacancies/80312991?host=hh.ru",
+                  "adv_response_url": null,
+                  "alternate_url": "https://hh.ru/vacancy/80312991",
+                  "relations": [],
+                  "employer": {
+                        "id": "230159",
+                        "name": "ТаймВэб",
+                        "url": "https://api.hh.ru/employers/230159",
+                        "alternate_url": "https://hh.ru/employer/230159",
+                        "logo_urls": {
+                              "90": "https://hhcdn.ru/employer-logo/3923255.jpeg",
+                              "240": "https://hhcdn.ru/employer-logo/3923256.jpeg",
+                              "original": "https://hhcdn.ru/employer-logo-original/870595.jpeg"
+                        },
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=230159",
+                        "trusted": true
+                  },
+                  "snippet": {
+                        "requirement": "Опыта коммерческой разработки на <highlighttext>Python</highlighttext> 3 от 2х лет и написания масштабируемого и понятного REST API. Опыта работы с...",
+                        "responsibility": "Писать архитектуру backend приложения (там REST API на Flask + MySQL). Минимум легаси, максимум творческой свободы. Дорабатывать API для frontend..."
+                  },
+                  "contacts": null,
+                  "schedule": null,
+                  "working_days": [],
+                  "working_time_intervals": [],
+                  "working_time_modes": [],
+                  "accept_temporary": false,
+                  "professional_roles": [
+                        {
+                              "id": "96",
+                              "name": "Программист, разработчик"
+                        }
+                  ],
+                  "accept_incomplete_resumes": false,
+                  "experience": {
+                        "id": "between1And3",
+                        "name": "От 1 года до 3 лет"
+                  },
+                  "employment": {
+                        "id": "full",
+                        "name": "Полная занятость"
+                  }
+            },
+            {
                   "id": "67635148",
                   "premium": false,
                   "name": "Python-developer",
@@ -2559,74 +2722,6 @@
                         {
                               "id": "96",
                               "name": "Программист, разработчик"
-                        }
-                  ],
-                  "accept_incomplete_resumes": false,
-                  "experience": {
-                        "id": "between1And3",
-                        "name": "От 1 года до 3 лет"
-                  },
-                  "employment": {
-                        "id": "full",
-                        "name": "Полная занятость"
-                  }
-            },
-            {
-                  "id": "78877310",
-                  "premium": false,
-                  "name": "Инженер по тестированию (PT CERT)",
-                  "department": null,
-                  "has_test": false,
-                  "response_letter_required": false,
-                  "area": {
-                        "id": "2",
-                        "name": "Санкт-Петербург",
-                        "url": "https://api.hh.ru/areas/2"
-                  },
-                  "salary": null,
-                  "type": {
-                        "id": "open",
-                        "name": "Открытая"
-                  },
-                  "address": null,
-                  "response_url": null,
-                  "sort_point_distance": null,
-                  "published_at": "2023-05-02T17:28:31+0300",
-                  "created_at": "2023-05-02T17:28:31+0300",
-                  "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=78877310",
-                  "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/78877310?host=hh.ru",
-                  "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/78877310",
-                  "relations": [],
-                  "employer": {
-                        "id": "26624",
-                        "name": "Positive Technologies",
-                        "url": "https://api.hh.ru/employers/26624",
-                        "alternate_url": "https://hh.ru/employer/26624",
-                        "logo_urls": {
-                              "original": "https://hhcdn.ru/employer-logo-original/927260.png",
-                              "240": "https://hhcdn.ru/employer-logo/4149601.png",
-                              "90": "https://hhcdn.ru/employer-logo/4149600.png"
-                        },
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=26624",
-                        "trusted": true
-                  },
-                  "snippet": {
-                        "requirement": "Опыт работы с Docker. Опыт тестирования RabbitMQ. Опыт работы с VmWare vSphere. Опыт автоматизации с помощью <highlighttext>Python</highlighttext> 3, Pytest и...",
-                        "responsibility": "Проведение ручного функционального и регрессионного тестирования. Составление и актуализация тест дизайна, тест планов, тест репортов. Анализ отчетов по результатам прогона. "
-                  },
-                  "contacts": null,
-                  "schedule": null,
-                  "working_days": [],
-                  "working_time_intervals": [],
-                  "working_time_modes": [],
-                  "accept_temporary": false,
-                  "professional_roles": [
-                        {
-                              "id": "124",
-                              "name": "Тестировщик"
                         }
                   ],
                   "accept_incomplete_resumes": false,
@@ -2769,101 +2864,6 @@
                   "experience": {
                         "id": "between3And6",
                         "name": "От 3 до 6 лет"
-                  },
-                  "employment": {
-                        "id": "full",
-                        "name": "Полная занятость"
-                  }
-            },
-            {
-                  "id": "80312991",
-                  "premium": false,
-                  "name": "Middle Python Developer",
-                  "department": null,
-                  "has_test": false,
-                  "response_letter_required": false,
-                  "area": {
-                        "id": "2",
-                        "name": "Санкт-Петербург",
-                        "url": "https://api.hh.ru/areas/2"
-                  },
-                  "salary": null,
-                  "type": {
-                        "id": "open",
-                        "name": "Открытая"
-                  },
-                  "address": {
-                        "city": "Санкт-Петербург",
-                        "street": "Заставская улица",
-                        "building": "22а",
-                        "lat": 59.888487,
-                        "lng": 30.327708,
-                        "description": null,
-                        "raw": "Санкт-Петербург, Заставская улица, 22а",
-                        "metro": {
-                              "station_name": "Московские ворота",
-                              "line_name": "Московско-Петроградская",
-                              "station_id": "15.221",
-                              "line_id": "15",
-                              "lat": 59.891788,
-                              "lng": 30.317873
-                        },
-                        "metro_stations": [
-                              {
-                                    "station_name": "Московские ворота",
-                                    "line_name": "Московско-Петроградская",
-                                    "station_id": "15.221",
-                                    "line_id": "15",
-                                    "lat": 59.891788,
-                                    "lng": 30.317873
-                              }
-                        ],
-                        "id": "230953"
-                  },
-                  "response_url": null,
-                  "sort_point_distance": null,
-                  "published_at": "2023-05-11T15:48:35+0300",
-                  "created_at": "2023-05-11T15:48:35+0300",
-                  "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80312991",
-                  "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/80312991?host=hh.ru",
-                  "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/80312991",
-                  "relations": [],
-                  "employer": {
-                        "id": "230159",
-                        "name": "ТаймВэб",
-                        "url": "https://api.hh.ru/employers/230159",
-                        "alternate_url": "https://hh.ru/employer/230159",
-                        "logo_urls": {
-                              "90": "https://hhcdn.ru/employer-logo/3923255.jpeg",
-                              "240": "https://hhcdn.ru/employer-logo/3923256.jpeg",
-                              "original": "https://hhcdn.ru/employer-logo-original/870595.jpeg"
-                        },
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=230159",
-                        "trusted": true
-                  },
-                  "snippet": {
-                        "requirement": "Опыта коммерческой разработки на <highlighttext>Python</highlighttext> 3 от 2х лет и написания масштабируемого и понятного REST API. Опыта работы с...",
-                        "responsibility": "Писать архитектуру backend приложения (там REST API на Flask + MySQL). Минимум легаси, максимум творческой свободы. Дорабатывать API для frontend..."
-                  },
-                  "contacts": null,
-                  "schedule": null,
-                  "working_days": [],
-                  "working_time_intervals": [],
-                  "working_time_modes": [],
-                  "accept_temporary": false,
-                  "professional_roles": [
-                        {
-                              "id": "96",
-                              "name": "Программист, разработчик"
-                        }
-                  ],
-                  "accept_incomplete_resumes": false,
-                  "experience": {
-                        "id": "between1And3",
-                        "name": "От 1 года до 3 лет"
                   },
                   "employment": {
                         "id": "full",
@@ -4231,6 +4231,74 @@
                   }
             },
             {
+                  "id": "79434478",
+                  "premium": false,
+                  "name": "Data Scientist",
+                  "department": null,
+                  "has_test": false,
+                  "response_letter_required": false,
+                  "area": {
+                        "id": "2",
+                        "name": "Санкт-Петербург",
+                        "url": "https://api.hh.ru/areas/2"
+                  },
+                  "salary": null,
+                  "type": {
+                        "id": "open",
+                        "name": "Открытая"
+                  },
+                  "address": null,
+                  "response_url": null,
+                  "sort_point_distance": null,
+                  "published_at": "2023-04-18T09:22:37+0300",
+                  "created_at": "2023-04-18T09:22:37+0300",
+                  "archived": false,
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=79434478",
+                  "insider_interview": null,
+                  "url": "https://api.hh.ru/vacancies/79434478?host=hh.ru",
+                  "adv_response_url": null,
+                  "alternate_url": "https://hh.ru/vacancy/79434478",
+                  "relations": [],
+                  "employer": {
+                        "id": "9173883",
+                        "name": "«UZUM TECHNOLOGIES».",
+                        "url": "https://api.hh.ru/employers/9173883",
+                        "alternate_url": "https://hh.ru/employer/9173883",
+                        "logo_urls": {
+                              "original": "https://hhcdn.ru/employer-logo-original/1015324.png",
+                              "90": "https://hhcdn.ru/employer-logo/5682064.png",
+                              "240": "https://hhcdn.ru/employer-logo/5682065.png"
+                        },
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=9173883",
+                        "trusted": true
+                  },
+                  "snippet": {
+                        "requirement": "Знание <highlighttext>Python</highlighttext> и SQL. Опыт работы как минимум с несколькими библиотеками из нашего стека: Pandas, LightGBM, sklearn. Хорошее понимание принципов...",
+                        "responsibility": "Придумывать и собирать новые фичи, оценивать их прибавку к качеству моделей. Строить модели на размеченных выборках на имеющемся признаковом пространстве. "
+                  },
+                  "contacts": null,
+                  "schedule": null,
+                  "working_days": [],
+                  "working_time_intervals": [],
+                  "working_time_modes": [],
+                  "accept_temporary": false,
+                  "professional_roles": [
+                        {
+                              "id": "165",
+                              "name": "Дата-сайентист"
+                        }
+                  ],
+                  "accept_incomplete_resumes": false,
+                  "experience": {
+                        "id": "noExperience",
+                        "name": "Нет опыта"
+                  },
+                  "employment": {
+                        "id": "full",
+                        "name": "Полная занятость"
+                  }
+            },
+            {
                   "id": "79218860",
                   "premium": false,
                   "name": "Дежурный инженер технической поддержки",
@@ -4306,147 +4374,6 @@
                   "employment": {
                         "id": "part",
                         "name": "Частичная занятость"
-                  }
-            },
-            {
-                  "id": "79434478",
-                  "premium": false,
-                  "name": "Data Scientist",
-                  "department": null,
-                  "has_test": false,
-                  "response_letter_required": false,
-                  "area": {
-                        "id": "2",
-                        "name": "Санкт-Петербург",
-                        "url": "https://api.hh.ru/areas/2"
-                  },
-                  "salary": null,
-                  "type": {
-                        "id": "open",
-                        "name": "Открытая"
-                  },
-                  "address": null,
-                  "response_url": null,
-                  "sort_point_distance": null,
-                  "published_at": "2023-04-18T09:22:37+0300",
-                  "created_at": "2023-04-18T09:22:37+0300",
-                  "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=79434478",
-                  "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/79434478?host=hh.ru",
-                  "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/79434478",
-                  "relations": [],
-                  "employer": {
-                        "id": "9173883",
-                        "name": "«UZUM TECHNOLOGIES».",
-                        "url": "https://api.hh.ru/employers/9173883",
-                        "alternate_url": "https://hh.ru/employer/9173883",
-                        "logo_urls": {
-                              "original": "https://hhcdn.ru/employer-logo-original/1015324.png",
-                              "90": "https://hhcdn.ru/employer-logo/5682064.png",
-                              "240": "https://hhcdn.ru/employer-logo/5682065.png"
-                        },
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=9173883",
-                        "trusted": true
-                  },
-                  "snippet": {
-                        "requirement": "Знание <highlighttext>Python</highlighttext> и SQL. Опыт работы как минимум с несколькими библиотеками из нашего стека: Pandas, LightGBM, sklearn. Хорошее понимание принципов...",
-                        "responsibility": "Придумывать и собирать новые фичи, оценивать их прибавку к качеству моделей. Строить модели на размеченных выборках на имеющемся признаковом пространстве. "
-                  },
-                  "contacts": null,
-                  "schedule": null,
-                  "working_days": [],
-                  "working_time_intervals": [],
-                  "working_time_modes": [],
-                  "accept_temporary": false,
-                  "professional_roles": [
-                        {
-                              "id": "165",
-                              "name": "Дата-сайентист"
-                        }
-                  ],
-                  "accept_incomplete_resumes": false,
-                  "experience": {
-                        "id": "noExperience",
-                        "name": "Нет опыта"
-                  },
-                  "employment": {
-                        "id": "full",
-                        "name": "Полная занятость"
-                  }
-            },
-            {
-                  "id": "80381844",
-                  "premium": false,
-                  "name": "Специалист отдела внедрения (российская продуктовая ИТ-компания, удалённо)",
-                  "department": null,
-                  "has_test": false,
-                  "response_letter_required": false,
-                  "area": {
-                        "id": "2",
-                        "name": "Санкт-Петербург",
-                        "url": "https://api.hh.ru/areas/2"
-                  },
-                  "salary": {
-                        "from": 50000,
-                        "to": 80000,
-                        "currency": "RUR",
-                        "gross": false
-                  },
-                  "type": {
-                        "id": "open",
-                        "name": "Открытая"
-                  },
-                  "address": null,
-                  "response_url": null,
-                  "sort_point_distance": null,
-                  "published_at": "2023-05-13T10:06:27+0300",
-                  "created_at": "2023-05-13T10:06:27+0300",
-                  "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80381844",
-                  "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/80381844?host=hh.ru",
-                  "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/80381844",
-                  "relations": [],
-                  "employer": {
-                        "id": "4099206",
-                        "name": "Первая Форма",
-                        "url": "https://api.hh.ru/employers/4099206",
-                        "alternate_url": "https://hh.ru/employer/4099206",
-                        "logo_urls": {
-                              "90": "https://hhcdn.ru/employer-logo/5602972.png",
-                              "240": "https://hhcdn.ru/employer-logo/5602973.png",
-                              "original": "https://hhcdn.ru/employer-logo-original/995544.png"
-                        },
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=4099206",
-                        "trusted": true
-                  },
-                  "snippet": {
-                        "requirement": "Будет плюсом опыт написания кода на скриптовом языке программирования – JS, <highlighttext>Python</highlighttext>, LUA. Будет плюсом опыт работы с HTML, CSS – базовые...",
-                        "responsibility": "Настройка и администрирование платформы с использованием внутренних инструментов веб-приложения. Написание SQL-запросов разного уровня сложности. Разработка отчётов, дашбордов, настройка..."
-                  },
-                  "contacts": null,
-                  "schedule": null,
-                  "working_days": [],
-                  "working_time_intervals": [],
-                  "working_time_modes": [],
-                  "accept_temporary": false,
-                  "professional_roles": [
-                        {
-                              "id": "96",
-                              "name": "Программист, разработчик"
-                        }
-                  ],
-                  "accept_incomplete_resumes": false,
-                  "experience": {
-                        "id": "between1And3",
-                        "name": "От 1 года до 3 лет"
-                  },
-                  "employment": {
-                        "id": "full",
-                        "name": "Полная занятость"
                   }
             },
             {
@@ -4789,6 +4716,185 @@
                   }
             },
             {
+                  "id": "80345035",
+                  "premium": false,
+                  "name": "Сетевой инженер",
+                  "department": null,
+                  "has_test": false,
+                  "response_letter_required": false,
+                  "area": {
+                        "id": "2",
+                        "name": "Санкт-Петербург",
+                        "url": "https://api.hh.ru/areas/2"
+                  },
+                  "salary": null,
+                  "type": {
+                        "id": "open",
+                        "name": "Открытая"
+                  },
+                  "address": {
+                        "city": "Санкт-Петербург",
+                        "street": "улица Савушкина",
+                        "building": "126Б",
+                        "lat": 59.985926,
+                        "lng": 30.202743,
+                        "description": null,
+                        "raw": "Санкт-Петербург, улица Савушкина, 126Б",
+                        "metro": {
+                              "station_name": "Беговая",
+                              "line_name": "Невско-Василеостровская",
+                              "station_id": "16.604",
+                              "line_id": "16",
+                              "lat": 59.98723,
+                              "lng": 30.20247
+                        },
+                        "metro_stations": [
+                              {
+                                    "station_name": "Беговая",
+                                    "line_name": "Невско-Василеостровская",
+                                    "station_id": "16.604",
+                                    "line_id": "16",
+                                    "lat": 59.98723,
+                                    "lng": 30.20247
+                              }
+                        ],
+                        "id": "1320800"
+                  },
+                  "response_url": null,
+                  "sort_point_distance": null,
+                  "published_at": "2023-05-12T11:03:38+0300",
+                  "created_at": "2023-05-12T11:03:38+0300",
+                  "archived": false,
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80345035",
+                  "insider_interview": null,
+                  "url": "https://api.hh.ru/vacancies/80345035?host=hh.ru",
+                  "adv_response_url": null,
+                  "alternate_url": "https://hh.ru/vacancy/80345035",
+                  "relations": [],
+                  "employer": {
+                        "id": "1375441",
+                        "name": "Okko",
+                        "url": "https://api.hh.ru/employers/1375441",
+                        "alternate_url": "https://hh.ru/employer/1375441",
+                        "logo_urls": {
+                              "90": "https://hhcdn.ru/employer-logo/3778063.png",
+                              "240": "https://hhcdn.ru/employer-logo/3778064.png",
+                              "original": "https://hhcdn.ru/employer-logo-original/834295.png"
+                        },
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1375441",
+                        "trusted": true
+                  },
+                  "snippet": {
+                        "requirement": "...или разработке и проектировании сетей предприятия. Понимание принципов работы IP Fabric (EVPN/VXLAN). Применение <highlighttext>Python</highlighttext> и/или Ansible для автоматизации.",
+                        "responsibility": "Обеспечение инфраструктурной безопасности (планирование, согласование, реализация). Проводить оценку изменений в сетевой инфрастуктуре на соответствие внутренним стандартам по информационной безопасности. "
+                  },
+                  "contacts": null,
+                  "schedule": null,
+                  "working_days": [],
+                  "working_time_intervals": [],
+                  "working_time_modes": [],
+                  "accept_temporary": false,
+                  "professional_roles": [
+                        {
+                              "id": "112",
+                              "name": "Сетевой инженер"
+                        }
+                  ],
+                  "accept_incomplete_resumes": false,
+                  "experience": {
+                        "id": "between3And6",
+                        "name": "От 3 до 6 лет"
+                  },
+                  "employment": {
+                        "id": "full",
+                        "name": "Полная занятость"
+                  }
+            },
+            {
+                  "id": "77432222",
+                  "premium": false,
+                  "name": "Системный администратор",
+                  "department": null,
+                  "has_test": false,
+                  "response_letter_required": false,
+                  "area": {
+                        "id": "2",
+                        "name": "Санкт-Петербург",
+                        "url": "https://api.hh.ru/areas/2"
+                  },
+                  "salary": {
+                        "from": 120000,
+                        "to": 120000,
+                        "currency": "RUR",
+                        "gross": true
+                  },
+                  "type": {
+                        "id": "open",
+                        "name": "Открытая"
+                  },
+                  "address": {
+                        "city": "Санкт-Петербург",
+                        "street": "Долгоозёрная улица",
+                        "building": "12к3",
+                        "lat": 60.017665,
+                        "lng": 30.243473,
+                        "description": null,
+                        "raw": "Санкт-Петербург, Долгоозёрная улица, 12к3",
+                        "metro": null,
+                        "metro_stations": [],
+                        "id": "2496691"
+                  },
+                  "response_url": null,
+                  "sort_point_distance": null,
+                  "published_at": "2023-04-24T09:24:12+0300",
+                  "created_at": "2023-04-24T09:24:12+0300",
+                  "archived": false,
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=77432222",
+                  "insider_interview": null,
+                  "url": "https://api.hh.ru/vacancies/77432222?host=hh.ru",
+                  "adv_response_url": null,
+                  "alternate_url": "https://hh.ru/vacancy/77432222",
+                  "relations": [],
+                  "employer": {
+                        "id": "2400231",
+                        "name": "Мой Зубной",
+                        "url": "https://api.hh.ru/employers/2400231",
+                        "alternate_url": "https://hh.ru/employer/2400231",
+                        "logo_urls": {
+                              "original": "https://hhcdn.ru/employer-logo-original/624057.png",
+                              "240": "https://hhcdn.ru/employer-logo/2937381.png",
+                              "90": "https://hhcdn.ru/employer-logo/2937380.png"
+                        },
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=2400231",
+                        "trusted": true
+                  },
+                  "snippet": {
+                        "requirement": "Опыт настройки сетевого оборудования, серверного оборудования. - Shell, <highlighttext>Python</highlighttext> достаточно опыта написания небольших скриптов. - Английский язык на уровне чтения технической документации. ",
+                        "responsibility": "Обеспечение комплексной поддержки и развития IT-инфраструктуры компании. - Администрирование и техническое сопровождение (серверы, рабочие станции, сетевая инфраструктура, виртуализация, телефония и..."
+                  },
+                  "contacts": null,
+                  "schedule": null,
+                  "working_days": [],
+                  "working_time_intervals": [],
+                  "working_time_modes": [],
+                  "accept_temporary": false,
+                  "professional_roles": [
+                        {
+                              "id": "113",
+                              "name": "Системный администратор"
+                        }
+                  ],
+                  "accept_incomplete_resumes": false,
+                  "experience": {
+                        "id": "between3And6",
+                        "name": "От 3 до 6 лет"
+                  },
+                  "employment": {
+                        "id": "full",
+                        "name": "Полная занятость"
+                  }
+            },
+            {
                   "id": "79046699",
                   "premium": false,
                   "name": "BI Analyst",
@@ -4884,90 +4990,6 @@
                   }
             },
             {
-                  "id": "77432222",
-                  "premium": false,
-                  "name": "Системный администратор",
-                  "department": null,
-                  "has_test": false,
-                  "response_letter_required": false,
-                  "area": {
-                        "id": "2",
-                        "name": "Санкт-Петербург",
-                        "url": "https://api.hh.ru/areas/2"
-                  },
-                  "salary": {
-                        "from": 120000,
-                        "to": 120000,
-                        "currency": "RUR",
-                        "gross": true
-                  },
-                  "type": {
-                        "id": "open",
-                        "name": "Открытая"
-                  },
-                  "address": {
-                        "city": "Санкт-Петербург",
-                        "street": "Долгоозёрная улица",
-                        "building": "12к3",
-                        "lat": 60.017665,
-                        "lng": 30.243473,
-                        "description": null,
-                        "raw": "Санкт-Петербург, Долгоозёрная улица, 12к3",
-                        "metro": null,
-                        "metro_stations": [],
-                        "id": "2496691"
-                  },
-                  "response_url": null,
-                  "sort_point_distance": null,
-                  "published_at": "2023-04-24T09:24:12+0300",
-                  "created_at": "2023-04-24T09:24:12+0300",
-                  "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=77432222",
-                  "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/77432222?host=hh.ru",
-                  "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/77432222",
-                  "relations": [],
-                  "employer": {
-                        "id": "2400231",
-                        "name": "Мой Зубной",
-                        "url": "https://api.hh.ru/employers/2400231",
-                        "alternate_url": "https://hh.ru/employer/2400231",
-                        "logo_urls": {
-                              "original": "https://hhcdn.ru/employer-logo-original/624057.png",
-                              "240": "https://hhcdn.ru/employer-logo/2937381.png",
-                              "90": "https://hhcdn.ru/employer-logo/2937380.png"
-                        },
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=2400231",
-                        "trusted": true
-                  },
-                  "snippet": {
-                        "requirement": "Опыт настройки сетевого оборудования, серверного оборудования. - Shell, <highlighttext>Python</highlighttext> достаточно опыта написания небольших скриптов. - Английский язык на уровне чтения технической документации. ",
-                        "responsibility": "Обеспечение комплексной поддержки и развития IT-инфраструктуры компании. - Администрирование и техническое сопровождение (серверы, рабочие станции, сетевая инфраструктура, виртуализация, телефония и..."
-                  },
-                  "contacts": null,
-                  "schedule": null,
-                  "working_days": [],
-                  "working_time_intervals": [],
-                  "working_time_modes": [],
-                  "accept_temporary": false,
-                  "professional_roles": [
-                        {
-                              "id": "113",
-                              "name": "Системный администратор"
-                        }
-                  ],
-                  "accept_incomplete_resumes": false,
-                  "experience": {
-                        "id": "between3And6",
-                        "name": "От 3 до 6 лет"
-                  },
-                  "employment": {
-                        "id": "full",
-                        "name": "Полная занятость"
-                  }
-            },
-            {
                   "id": "79969547",
                   "premium": false,
                   "name": "Программист",
@@ -5040,6 +5062,79 @@
                   "snippet": {
                         "requirement": "Опыт разработки на одном из языков программирования java, javascript, <highlighttext>python</highlighttext>, php (1 год, наличие проектов). Опыт работы со средой разработки...",
                         "responsibility": "Разработка базы данных на языке программирования lsFusion в среде разработки IntelliJ IDEA. Работа с базой данных PostgreSQL. Работа с операционными..."
+                  },
+                  "contacts": null,
+                  "schedule": null,
+                  "working_days": [],
+                  "working_time_intervals": [],
+                  "working_time_modes": [],
+                  "accept_temporary": false,
+                  "professional_roles": [
+                        {
+                              "id": "96",
+                              "name": "Программист, разработчик"
+                        }
+                  ],
+                  "accept_incomplete_resumes": false,
+                  "experience": {
+                        "id": "between1And3",
+                        "name": "От 1 года до 3 лет"
+                  },
+                  "employment": {
+                        "id": "full",
+                        "name": "Полная занятость"
+                  }
+            },
+            {
+                  "id": "80381844",
+                  "premium": false,
+                  "name": "Специалист отдела внедрения (российская продуктовая ИТ-компания, удалённо)",
+                  "department": null,
+                  "has_test": false,
+                  "response_letter_required": false,
+                  "area": {
+                        "id": "2",
+                        "name": "Санкт-Петербург",
+                        "url": "https://api.hh.ru/areas/2"
+                  },
+                  "salary": {
+                        "from": 50000,
+                        "to": 80000,
+                        "currency": "RUR",
+                        "gross": false
+                  },
+                  "type": {
+                        "id": "open",
+                        "name": "Открытая"
+                  },
+                  "address": null,
+                  "response_url": null,
+                  "sort_point_distance": null,
+                  "published_at": "2023-05-13T10:06:27+0300",
+                  "created_at": "2023-05-13T10:06:27+0300",
+                  "archived": false,
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80381844",
+                  "insider_interview": null,
+                  "url": "https://api.hh.ru/vacancies/80381844?host=hh.ru",
+                  "adv_response_url": null,
+                  "alternate_url": "https://hh.ru/vacancy/80381844",
+                  "relations": [],
+                  "employer": {
+                        "id": "4099206",
+                        "name": "Первая Форма",
+                        "url": "https://api.hh.ru/employers/4099206",
+                        "alternate_url": "https://hh.ru/employer/4099206",
+                        "logo_urls": {
+                              "90": "https://hhcdn.ru/employer-logo/5602972.png",
+                              "240": "https://hhcdn.ru/employer-logo/5602973.png",
+                              "original": "https://hhcdn.ru/employer-logo-original/995544.png"
+                        },
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=4099206",
+                        "trusted": true
+                  },
+                  "snippet": {
+                        "requirement": "Будет плюсом опыт написания кода на скриптовом языке программирования – JS, <highlighttext>Python</highlighttext>, LUA. Будет плюсом опыт работы с HTML, CSS – базовые...",
+                        "responsibility": "Настройка и администрирование платформы с использованием внутренних инструментов веб-приложения. Написание SQL-запросов разного уровня сложности. Разработка отчётов, дашбордов, настройка..."
                   },
                   "contacts": null,
                   "schedule": null,
@@ -5321,6 +5416,85 @@
                   }
             },
             {
+                  "id": "80316327",
+                  "premium": false,
+                  "name": "Менеджер отдела аналитики и контроллинга",
+                  "department": null,
+                  "has_test": false,
+                  "response_letter_required": false,
+                  "area": {
+                        "id": "2",
+                        "name": "Санкт-Петербург",
+                        "url": "https://api.hh.ru/areas/2"
+                  },
+                  "salary": null,
+                  "type": {
+                        "id": "open",
+                        "name": "Открытая"
+                  },
+                  "address": {
+                        "city": "Санкт-Петербург",
+                        "street": "Гапсальская улица",
+                        "building": "5",
+                        "lat": 59.911223,
+                        "lng": 30.257226,
+                        "description": null,
+                        "raw": "Санкт-Петербург, Гапсальская улица, 5",
+                        "metro": null,
+                        "metro_stations": [],
+                        "id": "13025395"
+                  },
+                  "response_url": null,
+                  "sort_point_distance": null,
+                  "published_at": "2023-05-11T16:43:09+0300",
+                  "created_at": "2023-05-11T16:43:09+0300",
+                  "archived": false,
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80316327",
+                  "insider_interview": null,
+                  "url": "https://api.hh.ru/vacancies/80316327?host=hh.ru",
+                  "adv_response_url": null,
+                  "alternate_url": "https://hh.ru/vacancy/80316327",
+                  "relations": [],
+                  "employer": {
+                        "id": "4029257",
+                        "name": "РУСАЛ, Центр подбора персонала",
+                        "url": "https://api.hh.ru/employers/4029257",
+                        "alternate_url": "https://hh.ru/employer/4029257",
+                        "logo_urls": {
+                              "original": "https://hhcdn.ru/employer-logo-original/649739.png",
+                              "90": "https://hhcdn.ru/employer-logo/3040104.png",
+                              "240": "https://hhcdn.ru/employer-logo/3040105.png"
+                        },
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=4029257",
+                        "trusted": true
+                  },
+                  "snippet": {
+                        "requirement": "Высшее образование (техническое/экономическое). Навыки обработки массивов данных, знание методов сбора, оценки и анализа информации. Опыт составления ТЗ для доработки...",
+                        "responsibility": "Контроль выполнения сотрудниками корпоративных требований (результаты конкурсных отборов и договорная документация в системе электронного документооборота, проверка документов на соответствие критериям..."
+                  },
+                  "contacts": null,
+                  "schedule": null,
+                  "working_days": [],
+                  "working_time_intervals": [],
+                  "working_time_modes": [],
+                  "accept_temporary": false,
+                  "professional_roles": [
+                        {
+                              "id": "150",
+                              "name": "Бизнес-аналитик"
+                        }
+                  ],
+                  "accept_incomplete_resumes": false,
+                  "experience": {
+                        "id": "between3And6",
+                        "name": "От 3 до 6 лет"
+                  },
+                  "employment": {
+                        "id": "full",
+                        "name": "Полная занятость"
+                  }
+            },
+            {
                   "id": "79837622",
                   "premium": false,
                   "name": "Администратор баз данных",
@@ -5482,85 +5656,6 @@
                   "experience": {
                         "id": "between1And3",
                         "name": "От 1 года до 3 лет"
-                  },
-                  "employment": {
-                        "id": "full",
-                        "name": "Полная занятость"
-                  }
-            },
-            {
-                  "id": "80316327",
-                  "premium": false,
-                  "name": "Менеджер отдела аналитики и контроллинга",
-                  "department": null,
-                  "has_test": false,
-                  "response_letter_required": false,
-                  "area": {
-                        "id": "2",
-                        "name": "Санкт-Петербург",
-                        "url": "https://api.hh.ru/areas/2"
-                  },
-                  "salary": null,
-                  "type": {
-                        "id": "open",
-                        "name": "Открытая"
-                  },
-                  "address": {
-                        "city": "Санкт-Петербург",
-                        "street": "Гапсальская улица",
-                        "building": "5",
-                        "lat": 59.911223,
-                        "lng": 30.257226,
-                        "description": null,
-                        "raw": "Санкт-Петербург, Гапсальская улица, 5",
-                        "metro": null,
-                        "metro_stations": [],
-                        "id": "13025395"
-                  },
-                  "response_url": null,
-                  "sort_point_distance": null,
-                  "published_at": "2023-05-11T16:43:09+0300",
-                  "created_at": "2023-05-11T16:43:09+0300",
-                  "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80316327",
-                  "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/80316327?host=hh.ru",
-                  "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/80316327",
-                  "relations": [],
-                  "employer": {
-                        "id": "4029257",
-                        "name": "РУСАЛ, Центр подбора персонала",
-                        "url": "https://api.hh.ru/employers/4029257",
-                        "alternate_url": "https://hh.ru/employer/4029257",
-                        "logo_urls": {
-                              "original": "https://hhcdn.ru/employer-logo-original/649739.png",
-                              "90": "https://hhcdn.ru/employer-logo/3040104.png",
-                              "240": "https://hhcdn.ru/employer-logo/3040105.png"
-                        },
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=4029257",
-                        "trusted": true
-                  },
-                  "snippet": {
-                        "requirement": "Высшее образование (техническое/экономическое). Навыки обработки массивов данных, знание методов сбора, оценки и анализа информации. Опыт составления ТЗ для доработки...",
-                        "responsibility": "Контроль выполнения сотрудниками корпоративных требований (результаты конкурсных отборов и договорная документация в системе электронного документооборота, проверка документов на соответствие критериям..."
-                  },
-                  "contacts": null,
-                  "schedule": null,
-                  "working_days": [],
-                  "working_time_intervals": [],
-                  "working_time_modes": [],
-                  "accept_temporary": false,
-                  "professional_roles": [
-                        {
-                              "id": "150",
-                              "name": "Бизнес-аналитик"
-                        }
-                  ],
-                  "accept_incomplete_resumes": false,
-                  "experience": {
-                        "id": "between3And6",
-                        "name": "От 3 до 6 лет"
                   },
                   "employment": {
                         "id": "full",
@@ -6027,101 +6122,6 @@
                         }
                   ],
                   "accept_incomplete_resumes": true,
-                  "experience": {
-                        "id": "between3And6",
-                        "name": "От 3 до 6 лет"
-                  },
-                  "employment": {
-                        "id": "full",
-                        "name": "Полная занятость"
-                  }
-            },
-            {
-                  "id": "80345035",
-                  "premium": false,
-                  "name": "Сетевой инженер",
-                  "department": null,
-                  "has_test": false,
-                  "response_letter_required": false,
-                  "area": {
-                        "id": "2",
-                        "name": "Санкт-Петербург",
-                        "url": "https://api.hh.ru/areas/2"
-                  },
-                  "salary": null,
-                  "type": {
-                        "id": "open",
-                        "name": "Открытая"
-                  },
-                  "address": {
-                        "city": "Санкт-Петербург",
-                        "street": "улица Савушкина",
-                        "building": "126Б",
-                        "lat": 59.985926,
-                        "lng": 30.202743,
-                        "description": null,
-                        "raw": "Санкт-Петербург, улица Савушкина, 126Б",
-                        "metro": {
-                              "station_name": "Беговая",
-                              "line_name": "Невско-Василеостровская",
-                              "station_id": "16.604",
-                              "line_id": "16",
-                              "lat": 59.98723,
-                              "lng": 30.20247
-                        },
-                        "metro_stations": [
-                              {
-                                    "station_name": "Беговая",
-                                    "line_name": "Невско-Василеостровская",
-                                    "station_id": "16.604",
-                                    "line_id": "16",
-                                    "lat": 59.98723,
-                                    "lng": 30.20247
-                              }
-                        ],
-                        "id": "1320800"
-                  },
-                  "response_url": null,
-                  "sort_point_distance": null,
-                  "published_at": "2023-05-12T11:03:38+0300",
-                  "created_at": "2023-05-12T11:03:38+0300",
-                  "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80345035",
-                  "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/80345035?host=hh.ru",
-                  "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/80345035",
-                  "relations": [],
-                  "employer": {
-                        "id": "1375441",
-                        "name": "Okko",
-                        "url": "https://api.hh.ru/employers/1375441",
-                        "alternate_url": "https://hh.ru/employer/1375441",
-                        "logo_urls": {
-                              "90": "https://hhcdn.ru/employer-logo/3778063.png",
-                              "240": "https://hhcdn.ru/employer-logo/3778064.png",
-                              "original": "https://hhcdn.ru/employer-logo-original/834295.png"
-                        },
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1375441",
-                        "trusted": true
-                  },
-                  "snippet": {
-                        "requirement": "...или разработке и проектировании сетей предприятия. Понимание принципов работы IP Fabric (EVPN/VXLAN). Применение <highlighttext>Python</highlighttext> и/или Ansible для автоматизации.",
-                        "responsibility": "Обеспечение инфраструктурной безопасности (планирование, согласование, реализация). Проводить оценку изменений в сетевой инфрастуктуре на соответствие внутренним стандартам по информационной безопасности. "
-                  },
-                  "contacts": null,
-                  "schedule": null,
-                  "working_days": [],
-                  "working_time_intervals": [],
-                  "working_time_modes": [],
-                  "accept_temporary": false,
-                  "professional_roles": [
-                        {
-                              "id": "112",
-                              "name": "Сетевой инженер"
-                        }
-                  ],
-                  "accept_incomplete_resumes": false,
                   "experience": {
                         "id": "between3And6",
                         "name": "От 3 до 6 лет"
@@ -7233,74 +7233,6 @@
                   }
             },
             {
-                  "id": "77912433",
-                  "premium": false,
-                  "name": "Аналитик данных",
-                  "department": null,
-                  "has_test": false,
-                  "response_letter_required": false,
-                  "area": {
-                        "id": "2",
-                        "name": "Санкт-Петербург",
-                        "url": "https://api.hh.ru/areas/2"
-                  },
-                  "salary": null,
-                  "type": {
-                        "id": "open",
-                        "name": "Открытая"
-                  },
-                  "address": null,
-                  "response_url": null,
-                  "sort_point_distance": null,
-                  "published_at": "2023-05-10T17:34:37+0300",
-                  "created_at": "2023-05-10T17:34:37+0300",
-                  "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=77912433",
-                  "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/77912433?host=hh.ru",
-                  "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/77912433",
-                  "relations": [],
-                  "employer": {
-                        "id": "77364",
-                        "name": "Петрович, Строительный Торговый Дом",
-                        "url": "https://api.hh.ru/employers/77364",
-                        "alternate_url": "https://hh.ru/employer/77364",
-                        "logo_urls": {
-                              "240": "https://hhcdn.ru/employer-logo/5510017.png",
-                              "90": "https://hhcdn.ru/employer-logo/5510016.png",
-                              "original": "https://hhcdn.ru/employer-logo-original/972292.png"
-                        },
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=77364",
-                        "trusted": true
-                  },
-                  "snippet": {
-                        "requirement": "Опыт разработки отчетности в BI-системе. Владением навыком бизнес-анализа. Знание основы <highlighttext>Python</highlighttext> для работы с данными и владение SQL. ",
-                        "responsibility": "Построение системы сбора данных, моделирование и прогнозирование HR-метрик. Взаимодействие с ИТ по вопросам создания, настройки, поиска и передачи необходимых..."
-                  },
-                  "contacts": null,
-                  "schedule": null,
-                  "working_days": [],
-                  "working_time_intervals": [],
-                  "working_time_modes": [],
-                  "accept_temporary": false,
-                  "professional_roles": [
-                        {
-                              "id": "156",
-                              "name": "BI-аналитик, аналитик данных"
-                        }
-                  ],
-                  "accept_incomplete_resumes": false,
-                  "experience": {
-                        "id": "between1And3",
-                        "name": "От 1 года до 3 лет"
-                  },
-                  "employment": {
-                        "id": "full",
-                        "name": "Полная занятость"
-                  }
-            },
-            {
                   "id": "79760167",
                   "premium": false,
                   "name": "Аналитик Al",
@@ -7362,6 +7294,74 @@
                   "experience": {
                         "id": "between3And6",
                         "name": "От 3 до 6 лет"
+                  },
+                  "employment": {
+                        "id": "full",
+                        "name": "Полная занятость"
+                  }
+            },
+            {
+                  "id": "77912433",
+                  "premium": false,
+                  "name": "Аналитик данных",
+                  "department": null,
+                  "has_test": false,
+                  "response_letter_required": false,
+                  "area": {
+                        "id": "2",
+                        "name": "Санкт-Петербург",
+                        "url": "https://api.hh.ru/areas/2"
+                  },
+                  "salary": null,
+                  "type": {
+                        "id": "open",
+                        "name": "Открытая"
+                  },
+                  "address": null,
+                  "response_url": null,
+                  "sort_point_distance": null,
+                  "published_at": "2023-05-10T17:34:37+0300",
+                  "created_at": "2023-05-10T17:34:37+0300",
+                  "archived": false,
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=77912433",
+                  "insider_interview": null,
+                  "url": "https://api.hh.ru/vacancies/77912433?host=hh.ru",
+                  "adv_response_url": null,
+                  "alternate_url": "https://hh.ru/vacancy/77912433",
+                  "relations": [],
+                  "employer": {
+                        "id": "77364",
+                        "name": "Петрович, Строительный Торговый Дом",
+                        "url": "https://api.hh.ru/employers/77364",
+                        "alternate_url": "https://hh.ru/employer/77364",
+                        "logo_urls": {
+                              "240": "https://hhcdn.ru/employer-logo/5510017.png",
+                              "90": "https://hhcdn.ru/employer-logo/5510016.png",
+                              "original": "https://hhcdn.ru/employer-logo-original/972292.png"
+                        },
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=77364",
+                        "trusted": true
+                  },
+                  "snippet": {
+                        "requirement": "Опыт разработки отчетности в BI-системе. Владением навыком бизнес-анализа. Знание основы <highlighttext>Python</highlighttext> для работы с данными и владение SQL. ",
+                        "responsibility": "Построение системы сбора данных, моделирование и прогнозирование HR-метрик. Взаимодействие с ИТ по вопросам создания, настройки, поиска и передачи необходимых..."
+                  },
+                  "contacts": null,
+                  "schedule": null,
+                  "working_days": [],
+                  "working_time_intervals": [],
+                  "working_time_modes": [],
+                  "accept_temporary": false,
+                  "professional_roles": [
+                        {
+                              "id": "156",
+                              "name": "BI-аналитик, аналитик данных"
+                        }
+                  ],
+                  "accept_incomplete_resumes": false,
+                  "experience": {
+                        "id": "between1And3",
+                        "name": "От 1 года до 3 лет"
                   },
                   "employment": {
                         "id": "full",
@@ -7882,6 +7882,74 @@
                   }
             },
             {
+                  "id": "80253759",
+                  "premium": false,
+                  "name": "Python (Django) developer (middle+ remote work)",
+                  "department": null,
+                  "has_test": false,
+                  "response_letter_required": false,
+                  "area": {
+                        "id": "2",
+                        "name": "Санкт-Петербург",
+                        "url": "https://api.hh.ru/areas/2"
+                  },
+                  "salary": null,
+                  "type": {
+                        "id": "open",
+                        "name": "Открытая"
+                  },
+                  "address": null,
+                  "response_url": null,
+                  "sort_point_distance": null,
+                  "published_at": "2023-05-10T16:19:51+0300",
+                  "created_at": "2023-05-10T16:19:51+0300",
+                  "archived": false,
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80253759",
+                  "insider_interview": null,
+                  "url": "https://api.hh.ru/vacancies/80253759?host=hh.ru",
+                  "adv_response_url": null,
+                  "alternate_url": "https://hh.ru/vacancy/80253759",
+                  "relations": [],
+                  "employer": {
+                        "id": "56119",
+                        "name": "Новео",
+                        "url": "https://api.hh.ru/employers/56119",
+                        "alternate_url": "https://hh.ru/employer/56119",
+                        "logo_urls": {
+                              "original": "https://hhcdn.ru/employer-logo-original/948026.jpg",
+                              "240": "https://hhcdn.ru/employer-logo/4232641.jpeg",
+                              "90": "https://hhcdn.ru/employer-logo/4232640.jpeg"
+                        },
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=56119",
+                        "trusted": true
+                  },
+                  "snippet": {
+                        "requirement": "Опыт работы с <highlighttext>Python</highlighttext> и Django от 3х лет. Опыт работы с инфраструктурой (DevOps) будет большим плюсом. ",
+                        "responsibility": "Работа в event-стартапе в международной команде. Выполнение поставленных лидом задач по разработке. Участие в написании спецификаций. Обработка запросов в..."
+                  },
+                  "contacts": null,
+                  "schedule": null,
+                  "working_days": [],
+                  "working_time_intervals": [],
+                  "working_time_modes": [],
+                  "accept_temporary": false,
+                  "professional_roles": [
+                        {
+                              "id": "96",
+                              "name": "Программист, разработчик"
+                        }
+                  ],
+                  "accept_incomplete_resumes": false,
+                  "experience": {
+                        "id": "between3And6",
+                        "name": "От 3 до 6 лет"
+                  },
+                  "employment": {
+                        "id": "full",
+                        "name": "Полная занятость"
+                  }
+            },
+            {
                   "id": "79403652",
                   "premium": false,
                   "name": "Data scientist (аналитик)",
@@ -8021,145 +8089,6 @@
                   }
             },
             {
-                  "id": "80151785",
-                  "premium": false,
-                  "name": "Разработчик dwh, Хранение и обработка данных, Платформа",
-                  "department": {
-                        "id": "ozonru-2180-dev",
-                        "name": "Ozon Информационные технологии"
-                  },
-                  "has_test": false,
-                  "response_letter_required": false,
-                  "area": {
-                        "id": "2",
-                        "name": "Санкт-Петербург",
-                        "url": "https://api.hh.ru/areas/2"
-                  },
-                  "salary": null,
-                  "type": {
-                        "id": "open",
-                        "name": "Открытая"
-                  },
-                  "address": null,
-                  "response_url": null,
-                  "sort_point_distance": null,
-                  "published_at": "2023-05-05T13:06:50+0300",
-                  "created_at": "2023-05-05T13:06:50+0300",
-                  "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80151785",
-                  "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/80151785?host=hh.ru",
-                  "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/80151785",
-                  "relations": [],
-                  "employer": {
-                        "id": "2180",
-                        "name": "Ozon",
-                        "url": "https://api.hh.ru/employers/2180",
-                        "alternate_url": "https://hh.ru/employer/2180",
-                        "logo_urls": {
-                              "original": "https://hhcdn.ru/employer-logo-original/1069622.png",
-                              "240": "https://hhcdn.ru/employer-logo/5899118.png",
-                              "90": "https://hhcdn.ru/employer-logo/5899117.png"
-                        },
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=2180",
-                        "trusted": true
-                  },
-                  "snippet": {
-                        "requirement": "Эти навыки помогают нам строить хранилища данных эффективно. Наличие опыта программирования на <highlighttext>Python</highlighttext> для разработки решения автогенерации задач ETL и...",
-                        "responsibility": "Разрабатывать и развивать ETL-системы, обеспечивающие информацию для различных предметных областей: продажи, учёт, логистика. Анализировать данные, заниматься дизайном структур данных..."
-                  },
-                  "contacts": null,
-                  "schedule": null,
-                  "working_days": [],
-                  "working_time_intervals": [],
-                  "working_time_modes": [],
-                  "accept_temporary": false,
-                  "professional_roles": [
-                        {
-                              "id": "96",
-                              "name": "Программист, разработчик"
-                        }
-                  ],
-                  "accept_incomplete_resumes": false,
-                  "experience": {
-                        "id": "between1And3",
-                        "name": "От 1 года до 3 лет"
-                  },
-                  "employment": {
-                        "id": "full",
-                        "name": "Полная занятость"
-                  }
-            },
-            {
-                  "id": "79030986",
-                  "premium": false,
-                  "name": "Middle / Middle+ Python Developer",
-                  "department": null,
-                  "has_test": false,
-                  "response_letter_required": false,
-                  "area": {
-                        "id": "2",
-                        "name": "Санкт-Петербург",
-                        "url": "https://api.hh.ru/areas/2"
-                  },
-                  "salary": null,
-                  "type": {
-                        "id": "open",
-                        "name": "Открытая"
-                  },
-                  "address": null,
-                  "response_url": null,
-                  "sort_point_distance": null,
-                  "published_at": "2023-05-07T11:38:20+0300",
-                  "created_at": "2023-05-07T11:38:20+0300",
-                  "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=79030986",
-                  "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/79030986?host=hh.ru",
-                  "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/79030986",
-                  "relations": [],
-                  "employer": {
-                        "id": "3292313",
-                        "name": "Holyweb",
-                        "url": "https://api.hh.ru/employers/3292313",
-                        "alternate_url": "https://hh.ru/employer/3292313",
-                        "logo_urls": {
-                              "original": "https://hhcdn.ru/employer-logo-original/773966.png",
-                              "90": "https://hhcdn.ru/employer-logo/3536755.png",
-                              "240": "https://hhcdn.ru/employer-logo/3536756.png"
-                        },
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=3292313",
-                        "trusted": true
-                  },
-                  "snippet": {
-                        "requirement": "Любовь к своему делу и живой интерес к IT-сфере (как и у нас самих). Уверенные знания <highlighttext>Python</highlighttext> и опыт...",
-                        "responsibility": "Участвовать в проекте — от обсуждения задачи до запуска. Разрабатывать новую платформу на <highlighttext>Python</highlighttext> 2/3, которой будут пользоваться миллионы клиентов. "
-                  },
-                  "contacts": null,
-                  "schedule": null,
-                  "working_days": [],
-                  "working_time_intervals": [],
-                  "working_time_modes": [],
-                  "accept_temporary": false,
-                  "professional_roles": [
-                        {
-                              "id": "96",
-                              "name": "Программист, разработчик"
-                        }
-                  ],
-                  "accept_incomplete_resumes": false,
-                  "experience": {
-                        "id": "between1And3",
-                        "name": "От 1 года до 3 лет"
-                  },
-                  "employment": {
-                        "id": "full",
-                        "name": "Полная занятость"
-                  }
-            },
-            {
                   "id": "80055629",
                   "premium": false,
                   "name": "Frontend-разработчик (middle/senior)",
@@ -8244,9 +8173,9 @@
                   }
             },
             {
-                  "id": "80253759",
+                  "id": "79030986",
                   "premium": false,
-                  "name": "Python (Django) developer (middle+ remote work)",
+                  "name": "Middle / Middle+ Python Developer",
                   "department": null,
                   "has_test": false,
                   "response_letter_required": false,
@@ -8263,31 +8192,31 @@
                   "address": null,
                   "response_url": null,
                   "sort_point_distance": null,
-                  "published_at": "2023-05-10T16:19:51+0300",
-                  "created_at": "2023-05-10T16:19:51+0300",
+                  "published_at": "2023-05-07T11:38:20+0300",
+                  "created_at": "2023-05-07T11:38:20+0300",
                   "archived": false,
-                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80253759",
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=79030986",
                   "insider_interview": null,
-                  "url": "https://api.hh.ru/vacancies/80253759?host=hh.ru",
+                  "url": "https://api.hh.ru/vacancies/79030986?host=hh.ru",
                   "adv_response_url": null,
-                  "alternate_url": "https://hh.ru/vacancy/80253759",
+                  "alternate_url": "https://hh.ru/vacancy/79030986",
                   "relations": [],
                   "employer": {
-                        "id": "56119",
-                        "name": "Новео",
-                        "url": "https://api.hh.ru/employers/56119",
-                        "alternate_url": "https://hh.ru/employer/56119",
+                        "id": "3292313",
+                        "name": "Holyweb",
+                        "url": "https://api.hh.ru/employers/3292313",
+                        "alternate_url": "https://hh.ru/employer/3292313",
                         "logo_urls": {
-                              "original": "https://hhcdn.ru/employer-logo-original/948026.jpg",
-                              "240": "https://hhcdn.ru/employer-logo/4232641.jpeg",
-                              "90": "https://hhcdn.ru/employer-logo/4232640.jpeg"
+                              "original": "https://hhcdn.ru/employer-logo-original/773966.png",
+                              "90": "https://hhcdn.ru/employer-logo/3536755.png",
+                              "240": "https://hhcdn.ru/employer-logo/3536756.png"
                         },
-                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=56119",
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=3292313",
                         "trusted": true
                   },
                   "snippet": {
-                        "requirement": "Опыт работы с <highlighttext>Python</highlighttext> и Django от 3х лет. Опыт работы с инфраструктурой (DevOps) будет большим плюсом. ",
-                        "responsibility": "Работа в event-стартапе в международной команде. Выполнение поставленных лидом задач по разработке. Участие в написании спецификаций. Обработка запросов в..."
+                        "requirement": "Любовь к своему делу и живой интерес к IT-сфере (как и у нас самих). Уверенные знания <highlighttext>Python</highlighttext> и опыт...",
+                        "responsibility": "Участвовать в проекте — от обсуждения задачи до запуска. Разрабатывать новую платформу на <highlighttext>Python</highlighttext> 2/3, которой будут пользоваться миллионы клиентов. "
                   },
                   "contacts": null,
                   "schedule": null,
@@ -8303,8 +8232,79 @@
                   ],
                   "accept_incomplete_resumes": false,
                   "experience": {
-                        "id": "between3And6",
-                        "name": "От 3 до 6 лет"
+                        "id": "between1And3",
+                        "name": "От 1 года до 3 лет"
+                  },
+                  "employment": {
+                        "id": "full",
+                        "name": "Полная занятость"
+                  }
+            },
+            {
+                  "id": "80151785",
+                  "premium": false,
+                  "name": "Разработчик dwh, Хранение и обработка данных, Платформа",
+                  "department": {
+                        "id": "ozonru-2180-dev",
+                        "name": "Ozon Информационные технологии"
+                  },
+                  "has_test": false,
+                  "response_letter_required": false,
+                  "area": {
+                        "id": "2",
+                        "name": "Санкт-Петербург",
+                        "url": "https://api.hh.ru/areas/2"
+                  },
+                  "salary": null,
+                  "type": {
+                        "id": "open",
+                        "name": "Открытая"
+                  },
+                  "address": null,
+                  "response_url": null,
+                  "sort_point_distance": null,
+                  "published_at": "2023-05-05T13:06:50+0300",
+                  "created_at": "2023-05-05T13:06:50+0300",
+                  "archived": false,
+                  "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80151785",
+                  "insider_interview": null,
+                  "url": "https://api.hh.ru/vacancies/80151785?host=hh.ru",
+                  "adv_response_url": null,
+                  "alternate_url": "https://hh.ru/vacancy/80151785",
+                  "relations": [],
+                  "employer": {
+                        "id": "2180",
+                        "name": "Ozon",
+                        "url": "https://api.hh.ru/employers/2180",
+                        "alternate_url": "https://hh.ru/employer/2180",
+                        "logo_urls": {
+                              "original": "https://hhcdn.ru/employer-logo-original/1069622.png",
+                              "240": "https://hhcdn.ru/employer-logo/5899118.png",
+                              "90": "https://hhcdn.ru/employer-logo/5899117.png"
+                        },
+                        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=2180",
+                        "trusted": true
+                  },
+                  "snippet": {
+                        "requirement": "Эти навыки помогают нам строить хранилища данных эффективно. Наличие опыта программирования на <highlighttext>Python</highlighttext> для разработки решения автогенерации задач ETL и...",
+                        "responsibility": "Разрабатывать и развивать ETL-системы, обеспечивающие информацию для различных предметных областей: продажи, учёт, логистика. Анализировать данные, заниматься дизайном структур данных..."
+                  },
+                  "contacts": null,
+                  "schedule": null,
+                  "working_days": [],
+                  "working_time_intervals": [],
+                  "working_time_modes": [],
+                  "accept_temporary": false,
+                  "professional_roles": [
+                        {
+                              "id": "96",
+                              "name": "Программист, разработчик"
+                        }
+                  ],
+                  "accept_incomplete_resumes": false,
+                  "experience": {
+                        "id": "between1And3",
+                        "name": "От 1 года до 3 лет"
                   },
                   "employment": {
                         "id": "full",
