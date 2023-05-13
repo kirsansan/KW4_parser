@@ -2,7 +2,7 @@
 
 {% block content %}
     {{ super() }}
-    <p>Список заданий первого урока
+    <p> работаем с имеющимися файлами
         {% for m in submenu %}
             {% if  m.url  %}
                 <li><a href={{ m.url }}>{{ m.name }}</a></li>

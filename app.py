@@ -4,7 +4,7 @@
 
 import flask
 from flask import Flask, render_template, request, url_for, abort
-from config.table_of_content import site_menu, lesson1_menu
+from config.table_of_content import site_menu, l1_menu
 
 
 app = Flask(__name__)
@@ -14,7 +14,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', title="K_Parser", menu=site_menu, submenu=lesson1_menu)
+    #return '<h1>Hello, %s!</h1>' % "K"
+    return render_template('index.html', title="K_Parser", menu=site_menu, submenu=l1_menu)
 
 
 
@@ -23,9 +24,13 @@ def about():
     return render_template('about.html', menu=site_menu)
 
 
-@app.route('/lesson1')
-def lesson1():
-    return render_template('lesson1.html', menu=site_menu, submenu=lesson1_menu)
+@app.route('/files')
+def files():
+    return render_template('files1.html', menu=site_menu, submenu=l1_menu)
+
+@app.route('/req')
+def tttt():
+    return render_template('tttt1.html', menu=site_menu, submenu=l1_menu)
 
 
 @app.route('/test')
@@ -54,4 +59,4 @@ def create_for_post():
 
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=5001, debug=True)
+    app.run(host='localhost', port=5000, debug=True)

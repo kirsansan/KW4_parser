@@ -19,11 +19,11 @@ a:hover {
 
 ul.mainmenu {
     list-style: none;
-    background: darkslategray;
+    background: #1a2828;
     height: 60px;
     margin: 0;
     padding: 0;
-    color: burlywood;
+    color: #776956;
     font-size: 20px;
     overflow: hidden;
 }
