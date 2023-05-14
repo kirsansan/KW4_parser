@@ -10,7 +10,7 @@
     <form method="post" action="/files" class="flash">
         <p><label> What do you want to search? Enter keyword </label> <input type="text" name="keyword" value="" />
         <p><label> What is number of string for visualisation? </label> <input type="text" name="count" value="10" />
-        <p><input type="submit" value="Let's go" />
+        <p><input type="submit" class="button" value="Let's go" />
     </form>
     {% for m in content %}
         <h3> {{ m.title }}</h3>

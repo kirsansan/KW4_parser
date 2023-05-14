@@ -6,6 +6,12 @@ html, body {
     width: 100%;
 }
 
+ input {
+	 font-size: 18px;
+	 vertical-align: middle;
+ }
+
+
 a {
     color: dodgerblue;
     text-decoration: none;
@@ -38,7 +44,7 @@ ul.mainmenu li a{
     text-decoration: none;
 }
 ul.mainmenu li a:hover {
-    color: indigo;
+    color: #f8f029;
 }
 
 div.content {
@@ -52,7 +58,21 @@ div.content {
 
 .form-contact p {margin: 10px 0 10px 0;}
 .form-contact input[type=submit], textarea {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .flash {padding: 10px}
+
+.button {
+    background-color: #1a2828; /* Green */
+    color: peru;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.button:hover {
+    color: #f8f029;
+    transform: skew(-10deg);
+}
