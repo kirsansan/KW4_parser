@@ -12,6 +12,7 @@ CODING_PAGE = 'utf-8'
 
 FILE_FOR_WRITE_RAW_DATA = "../data/raw_data_HH.json"
 FILE_FOR_VACANCY_JSON = "../data/vacancy.json"
+FILE_FOR_VACANCY_JSON_FOR_FLASK = "./data/vacancy.json"
 FILE_FOR_VACANCY_CSV = "../data/vacancy.csv"
 DB_FOR_VACANCY = "postgree.bd"
 

@@ -7,9 +7,12 @@
         <p> {{ m }}</p>
     {% endfor %}
 
-    <form method="post" action="/testPOS" class="flash">
+    <form method="post" action="/req" class="flash">
         <p><label> What do you want to find? Enter keyword </label> <input type="text" name="keyword" value="python" />
         <p><label> What is number of region for searching? </label> <input type="text" name="area" value="2" />
         <p><input type="submit" value="Let's go" />
     </form>
+    {% for msg in get_flashed_messages() %}
+    <div class="flash">{{ msg }}</div>
+    {% endfor %}
 {% endblock %}

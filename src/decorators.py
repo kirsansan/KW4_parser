@@ -15,7 +15,7 @@ def print_time_to_work(tell_me_about_you):
         :return: link to wrapper
         """
 
-        # print("я вижу что ты пришел из", tell_me_about_you)
+        # print("I know everything about you. Where are you going from? ", tell_me_about_you)
         def wrapper(*args):
             """ I  only decorator inside other decorator. I going to wrap your function"""
             print("I see you come from", tell_me_about_you)

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {{ super() }}
+    <p> Enter keyword and number of messages for search visualisation:
+    {% for m in mytext %}
+        <p> {{ m }}</p>
+    {% endfor %}
+
+    <form method="post" action="/files" class="flash">
+        <p><label> What do you want to search? Enter keyword </label> <input type="text" name="keyword" value="" />
+        <p><label> What is number of string for visualisation? </label> <input type="text" name="count" value="10" />
+        <p><input type="submit" value="Let's go" />
+    </form>
+    {% for m in content %}
+        <h3> {{ m.title }}</h3>
+        <p> {{ m.description }}</p>
+        <p> {{ m.salary_min }} {{ m.salary_max }} </p>
+        <p><a href={{ m.url }}> {{m.url}} </a></p>
+        <p>  </p>
+    {% endfor %}
+
+{% endblock %}

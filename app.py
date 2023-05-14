@@ -3,11 +3,14 @@
 """
 
 import flask
-from flask import Flask, render_template, request, url_for, abort
+from flask import Flask, render_template, request, url_for, abort, flash
 from config.table_of_content import site_menu, l1_menu
+from src.model import *
+from src.savers import *
 
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = "lmlmmlmlml666lmlmlm81dvfhg"
 
 
 
@@ -19,18 +22,37 @@ def index():
 
 
 
-@app.route('/about')
+@app.route('/about', methods=['POST', 'GET'])
 def about():
     return render_template('about.html', menu=site_menu)
 
 
-@app.route('/files')
-def files():
-    return render_template('files1.html', menu=site_menu, submenu=l1_menu)
+@app.route('/files', methods=['POST', 'GET'])
+def request_from_files():
+    main_content: list[dict] = []
+    if request.method == 'POST':
+        keyword = request.form['keyword']
+        count = int(request.form['count']) if request.form['count'].isdigit() else 0
+        count = 20 if count > 20 else count
+        if count > 0:
+            saver = JSONSaver(FILE_FOR_VACANCY_JSON_FOR_FLASK)
+            vvl: list[Vacancy] = saver.read()
+            vvl.sort(reverse=True)
+            # print("================================================================")
+            for i in range(0, count):
+                main_content.append(vvl[i].get_json())
+            # print(main_content)
+    return render_template('request_files.html', menu=site_menu, mytext=[''], content=main_content)
 
-@app.route('/req')
-def tttt():
-    return render_template('tttt1.html', menu=site_menu, submenu=l1_menu)
+@app.route('/req', methods=['POST', 'GET'])
+def request_from_api():
+    if request.method == 'POST':
+        print('Request')
+        print(request.form)
+        a = request.form['keyword']
+        print("a=", a)
+        flash("Request have just already done - you need wait...", "success")
+    return render_template('request_api.html', menu=site_menu, mytext=['use code: 1- moscow, 2 - st.peterburg'])
 
 
 @app.route('/test')
@@ -53,10 +75,9 @@ def user(name):
 def create_for_post():
     if request.method == 'POST':
         print(request.form)
-    print(request.form)
-    return render_template('answer.html', menu=site_menu, mytext=['test POS method'])
+    return render_template('answer.html', menu=site_menu, mytext=['use code: 1- moscow, 2 - st.peterburg'])
 
 
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=5000, debug=True)
+    app.run(host='localhost', debug=True, port=5003)
