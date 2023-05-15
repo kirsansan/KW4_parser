@@ -64,8 +64,8 @@ class JSONSaver(ABCSaver):
                 data = json.load(f)
             # print("data", data)
         else:
-            # raise(FileNotFoundException)
-            print("File not found")
+            raise FileNotFoundError(f"can't find file {self.filename}")
+            # print("File not found")
         return self.deserialize_json_to_vacancy(data)
 
 class CSVSaver(ABCSaver):
