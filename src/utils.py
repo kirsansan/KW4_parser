@@ -40,4 +40,6 @@ def sort_list_of_objects(objects: list):
 
 # this block for a self-test
 if __name__ == '__main__':
-    load_from_json_file("no_exist_file.json")
+    #load_from_json_file("no_exist_file.json")
+    d = load_from_json_file("../tests/file_for_easy_test.json")
+    print(d)

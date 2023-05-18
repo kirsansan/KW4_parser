@@ -37,3 +37,7 @@ def get_jssaver_bad():
 @pytest.fixture
 def get_jssaver_filename():
     return FILE_FOR_EASY_TEST
+
+@pytest.fixture
+def get_utils_filename():
+    return FILE_FOR_EASY_TEST
