@@ -10,8 +10,8 @@ def test_comparissions(get_vacancy_test_list):
     assert get_vacancy_test_list[0] > get_vacancy_test_list[1]
     assert get_vacancy_test_list[1] < get_vacancy_test_list[0]
     assert get_vacancy_test_list[1] <= get_vacancy_test_list[0]
-    assert (get_vacancy_test_list[0] == get_vacancy_test_list[1]) == False
-    assert (get_vacancy_test_list[0] != get_vacancy_test_list[1]) == True
+    assert not (get_vacancy_test_list[0] == get_vacancy_test_list[1])
+    assert (get_vacancy_test_list[0] != get_vacancy_test_list[1])
 
 def test_get_json_format(get_one_test_vacancy):
     assert get_one_test_vacancy.get_json() == {'description': 'title1 desc',

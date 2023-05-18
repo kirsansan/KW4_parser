@@ -14,8 +14,7 @@ def load_from_json_file(filename: str = '../data/vacancy.json') -> dict:
     """ load any information from json-format file and return it"""
     # load from file
     if not os.path.exists(filename):
-        return {}  # we did not find file and need to return nothing
-        # seriously we need to create ecxeption
+        raise FileNotFoundError(f"File not found: {filename}")
     with open(filename, 'r', encoding=CODING_PAGE) as fh:  # open file
         #data = fh.read()  # load data
         data = json.load(fh)
@@ -23,9 +22,9 @@ def load_from_json_file(filename: str = '../data/vacancy.json') -> dict:
 
 
 @light_print_time_to_work
-def write_to_json_file(filename, *text):
+def write_to_json_file(filename, text):
     """ just write data to json-format file"""
-    data = json.dumps(*text, indent=6, ensure_ascii=False)
+    data = json.dumps(text, indent=6, ensure_ascii=False)
     with open(filename, "w", encoding=CODING_PAGE) as f:
         #json.dump(data, f, ensure_ascii=False)
         f.write(data)

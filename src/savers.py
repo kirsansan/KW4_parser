@@ -1,8 +1,11 @@
 import json
 from abc import ABC, abstractmethod
+
+import src.utils
 from src.vacancy import Vacancy
 from config.config import *
 from src.decorators import light_print_time_to_work, print_time_to_work
+
 
 
 class ABCSaver(ABC):
@@ -28,13 +31,14 @@ class JSONSaver(ABCSaver):
             list_for_write.append(vac.get_json())
         return list_for_write
 
-    @light_print_time_to_work
+    #@light_print_time_to_work
     def write(self):
         list_for_write = self.serialize_vacancy_to_json()
-        data = json.dumps(list_for_write, indent=2, ensure_ascii=False)
-        with open(self.filename, 'w', encoding=CODING_PAGE) as f:
-            #json.dump(list_for_write, f, ensure_ascii=False)
-            f.write(data)
+        #data = json.dumps(list_for_write, indent=4, ensure_ascii=False)
+        # with open(self.filename, 'w', encoding=CODING_PAGE) as f:
+        #     #json.dump(list_for_write, f, ensure_ascii=False)
+        #     f.write(data)
+        src.utils.write_to_json_file(self.filename, list_for_write)
 
     def deserialize_json_to_vacancy(self, data) -> list[Vacancy]:
         vacancylist = []
@@ -53,19 +57,20 @@ class JSONSaver(ABCSaver):
                     continue
         return vacancylist
 
-    @light_print_time_to_work
+    #@light_print_time_to_work
     def read(self):
         """
         read file (self.filename)
-        :return: list of Vacancy-class object which was filled from file
+        :return: list of Vacancy-class objects which were filled from file
         """
-        if self.filename and os.path.isfile(self.filename):
-            with open(self.filename, 'r', encoding=CODING_PAGE) as f:
-                data = json.load(f)
-            # print("data", data)
-        else:
-            raise FileNotFoundError(f"can't find file {self.filename}")
-            # print("File not found")
+        # if self.filename and os.path.isfile(self.filename):
+        #     with open(self.filename, 'r', encoding=CODING_PAGE) as f:
+        #         data = json.load(f)
+        #     # print("data", data)
+        # else:
+        #     raise FileNotFoundError(f"can't find file {self.filename}")
+        #     # print("File not found")
+        data = src.utils.load_from_json_file(self.filename)
         return self.deserialize_json_to_vacancy(data)
 
 class CSVSaver(ABCSaver):
