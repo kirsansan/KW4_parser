@@ -124,7 +124,7 @@ class Model_SuperJob(Model):
         if response.status_code == 200:
             self.content = json.loads(response.text)
             self.content_inside.extend(self.content.get("objects"))
-        print("HH API response is:", response)  # need chane to logger
+        print("SurerJob API response is:", response)  # need chane to logger
 
     def get_parsed_data(self):
         """ parse data which received from API or raw-file for SuperJob format"""
