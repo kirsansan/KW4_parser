@@ -89,6 +89,7 @@ class Model_HH(Model):
             self.vacancy_list.append(vacancy)
         return self.vacancy_list
 
+    @light_print_time_to_work
     def get_big_data_step_by_step(self, files_write_flag=False):
         """
         fill self.vacancy_list with API
@@ -141,6 +142,7 @@ class Model_SuperJob(Model):
             self.vacancy_list.append(vacancy)
         return self.vacancy_list
 
+    @light_print_time_to_work
     def get_big_data_step_by_step(self, files_write_flag=False):
         """
         fill self.vacancy_list with API

@@ -38,11 +38,11 @@ def light_print_time_to_work(function):
     :return: link to wrapper
     """
 
-    def wrapper(*args):
+    def wrapper(*args, **kwargs):
         """ I  just easy decorator. I am going to wrap your function"""
         print(f"start function {function}")      # for debug use aslo    , *args)
         start_time = time.perf_counter()
-        res = function(*args)                    # it's our function with they arguments, and it must be returned
+        res = function(*args, **kwargs)                    # it's our function with they arguments, and it must be returned
         end_time = time.perf_counter()
         print(f"time taken for operation is {end_time - start_time}")
         return res
