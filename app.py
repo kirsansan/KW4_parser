@@ -10,7 +10,7 @@ from src.savers import *
 import time
 
 app = Flask(__name__)
-#app.config['SECRET_KEY'] = "lmlmmlmlml666lmlmlm81dvfhg"
+app.config['SECRET_KEY'] = "lmlmmlmlml666lmlmlm81dvfhg"
 # app.config['FLASK_DEBUG'] = 1
 
 

@@ -52,6 +52,7 @@ class Vacancy:
         return False
 
     def get_json(self):
+        """returns object data in json format"""
         return {"title": self.title,
                 "description": self.description,
                 "salary_min": self.salary_min,
@@ -60,6 +61,7 @@ class Vacancy:
                 }
 
     def check_empty_salary(self):
+        """method for checking and turn Null mentions to 0 integer in salary fields"""
         if not self.salary_min:
             self.salary_min = 0
         if not self.salary_max:
