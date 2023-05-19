@@ -17,7 +17,7 @@ class Model(ABC):
         self.content_inside: list = []
 
     def set_params(self, params):
-        """ Set params for searchin
+        """ Set params for searching
         format is {"text": "text for searching", "area": "area code"}"""
         self.params = params
 

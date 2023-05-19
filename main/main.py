@@ -94,8 +94,14 @@ if __name__ == '__main__':
     print(len(model.all))
 
     view = VacancyListView()
-    view.print_all(model.all)
-    view.print_ext_mode(model.all)
+    #view.print_all(model.all)
+    # view.print_ext_mode(model.all)
+
+    view.print_ext_mode(model.filter_by_strings("математическое".split()))
+    b = model.filter_by_salary(180_000)
+    view.print_ext_mode(b)
+    с = model.filter_by_strings("shell".split(), b)
+    view.print_ext_mode(с)
 
     # filter_words = input("Введите ключевые слова для фильтрации вакансий: ").split()
     # print(filter_words)

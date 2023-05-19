@@ -25,6 +25,7 @@ class VacancyListView:
 
     def print_ext_mode(self, data: list[Vacancy]):
         counter = 0
+        print("===============start of report=================")
         if data:
             for item in data:
                 if counter > self.__max_count_object_print:
@@ -38,3 +39,4 @@ class VacancyListView:
                 counter += 1
         else:
             print("vacancy list is empty yet")
+        print("================end of report==================")

@@ -1,8 +1,8 @@
 class Vacancy:
 
     def __init__(self, title="non title", desc="non description", salary_from=0, salary_to=0, url="non url"):
-        self.title = title
-        self.description = desc
+        self.title: str = title
+        self.description: str = desc
         self.salary_min: int = salary_from
         self.salary_max: int = salary_to
         self.url = url
