@@ -1,5 +1,7 @@
 from src.model import *
 from src.savers import *
+from models.vacancy_model import VacancyModel
+from view.vacancy_list_view import VacancyListView
 
 
 def read_big_apiHH():
@@ -54,7 +56,8 @@ def read_vacancy_data_file():
     # print(vvl)
     vvl.sort(reverse=True)
     print("================================================================")
-    print(vvl)
+    #print(vvl)
+    return vvl
 
 
 def read_raw_fileHH():
@@ -82,7 +85,17 @@ if __name__ == '__main__':
     # read_big_apiSJ()
     # read_raw_fileSJ()
 
-    read_both_API()
+    #read_both_API()
+
+    model = VacancyModel()
+    tmp = read_vacancy_data_file()
+    model.all = tmp
+    print(len(tmp))
+    print(len(model.all))
+
+    view = VacancyListView()
+    view.print_all(model.all)
+    view.print_ext_mode(model.all)
 
     # filter_words = input("Введите ключевые слова для фильтрации вакансий: ").split()
     # print(filter_words)
