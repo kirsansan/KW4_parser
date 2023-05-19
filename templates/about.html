@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {{ super() }}
+    <p>
+    <p> This micro-parser was written by Mr.K (aka Kirill.S)</p>
+    <form action="/about" method="post" class="form-contact">
+        <p><label>Name: </label> <input type="text" name="username" value="" required />
+
+        <p><input type="submit" class="button" value="Push me if you want" />
+    </form>
+{% endblock %}

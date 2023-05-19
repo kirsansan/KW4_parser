@@ -1,0 +1,16 @@
+[
+      {
+            "description": "title1 desc",
+            "salary_max": 60000,
+            "salary_min": 50000,
+            "title": "title1",
+            "url": "http://example.com"
+      },
+      {
+            "description": "title2 desc",
+            "salary_max": 180000,
+            "salary_min": 40000,
+            "title": "title2",
+            "url": "http://example.org"
+      }
+]

@@ -1,0 +1,78 @@
+html, body {
+    font-family: 'Lucida Console';
+    margin: 0;
+    padding: 0;
+    heihgt: 1000%;
+    width: 100%;
+}
+
+ input {
+	 font-size: 18px;
+	 vertical-align: middle;
+ }
+
+
+a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+a:hover {
+    color: violet;
+    text-decoration: underline;
+}
+
+.clear {clear: both}
+
+ul.mainmenu {
+    list-style: none;
+    background: #1a2828;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    color: #776956;
+    font-size: 20px;
+    overflow: hidden;
+}
+ul.mainmenu li{
+    float: left;
+    margin: 18px 40px 0 50px
+}
+ul.mainmenu li.last {float: right}
+
+ul.mainmenu li a{
+    color: peru;
+    text-decoration: none;
+}
+ul.mainmenu li a:hover {
+    color: #f8f029;
+}
+
+div.content {
+    margin: 10px;
+}
+
+.form-contact label {
+    display: inline-block;
+    min-width: 80px;
+}
+
+.form-contact p {margin: 10px 0 10px 0;}
+.form-contact input[type=submit], textarea {
+    font-size: 20px;
+}
+
+.flash {padding: 10px}
+
+.button {
+    background-color: #1a2828; /* Green */
+    color: peru;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.button:hover {
+    color: #f8f029;
+    transform: skew(-10deg);
+}

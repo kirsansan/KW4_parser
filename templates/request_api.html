@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {{ super() }}
+    <p> Enter keyword and region for search vacancy:
+    {% for m in mytext %}
+        <p> {{ m }}</p>
+    {% endfor %}
+
+    <form method="post" action="/req" class="flash">
+        <p><label> What do you want to find? Enter keyword </label> <input type="text" name="keyword" value="python" />
+        <p><label> What is number of region for searching? </label> <input type="text" name="area" value="2" />
+        <p><input type="submit" class="button" value="Let's go" />
+    </form>
+    {% for msg in get_flashed_messages() %}
+    <div class="flash">{{ msg }}</div>
+    {% endfor %}
+{% endblock %}
