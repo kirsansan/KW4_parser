@@ -15,7 +15,7 @@ FILE_FOR_WRITE_RAW_DATA_SJ = "../data/raw_data_SuperJob.json"
 FILE_FOR_VACANCY_JSON = "../data/vacancy.json"
 FILE_FOR_VACANCY_JSON_FOR_FLASK = "./data/vacancy.json"
 FILE_FOR_VACANCY_CSV = "../data/vacancy.csv"
-DB_FOR_VACANCY = "postgree.bd"
+DB_FOR_VACANCY = "postgres.bd"
 
 
 MAIN_REQUEST_FOR_HH = "https://api.hh.ru/vacancies"
