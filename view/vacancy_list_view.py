@@ -40,3 +40,11 @@ class VacancyListView:
         else:
             print("vacancy list is empty yet")
         print("================end of report==================")
+
+    def set_display_lines_dialog(self):
+        print("-----------------------")
+        print("Enter maximum of lines for display")
+        tmp_input = input(">")
+        if len(tmp_input) > 0 and tmp_input.split()[0].isdigit():
+            self.__max_count_object_print = int(tmp_input.split()[0])
+        print(f"OK. now maximum of lines for display is {self.__max_count_object_print}")

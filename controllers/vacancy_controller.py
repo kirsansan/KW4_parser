@@ -7,3 +7,4 @@ class VacancyController:
 
     def print_all(self):
         return self.view.print_all(self.model.all)
+
