@@ -2,6 +2,7 @@ from src.model import *
 from src.savers import *
 from models.vacancy_model import VacancyModel
 from view.vacancy_list_view import VacancyListView
+from view.set_param_view import SetParamView
 
 
 def read_big_apiHH():
@@ -102,6 +103,10 @@ if __name__ == '__main__':
     view.print_ext_mode(b)
     с = model.filter_by_strings("shell".split(), b)
     view.print_ext_mode(с)
+
+    view_set = SetParamView()
+    parameters = view_set.dialog()
+    print(parameters)
 
     # filter_words = input("Введите ключевые слова для фильтрации вакансий: ").split()
     # print(filter_words)
