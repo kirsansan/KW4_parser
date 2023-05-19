@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 import requests
-
 import src.utils
 from src.vacancy import Vacancy
 from src.utils import *

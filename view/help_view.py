@@ -1,6 +1,7 @@
 class Helper:
 
     def print_help(self):
+        """print help information"""
         print("use commands: setparam, info, callhh, callsj, callboth, readraw, readjson, viewlist, select, help")
         print("""
                 setparam - dialog for setting major parameters for calling API

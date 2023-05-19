@@ -10,6 +10,8 @@ class SJController:
         self.saver = saver
 
     def call(self):
+        """ call API method for the given data
+             this method use model.param when call API-request"""
         self.model.get_big_data_step_by_step(files_write_flag=False)
         self.model.write_to_file(FILE_FOR_WRITE_RAW_DATA_SJ)
         vl = self.model.get_parsed_data()

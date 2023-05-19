@@ -12,6 +12,8 @@ class HHSJController:
         self.saver = saver
 
     def call(self):
+        """ call API method for the given data
+        this method use model.param when call API-request"""
         self.model1.get_big_data_step_by_step(files_write_flag=False)
         self.model1.write_to_file(FILE_FOR_WRITE_RAW_DATA)
         self.model2.get_big_data_step_by_step(files_write_flag=False)

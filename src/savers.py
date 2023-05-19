@@ -13,6 +13,7 @@ class ABCSaver(ABC):
         self.datalist = datalist
 
     def set_datalist(self, datalist: list[:Vacancy]):
+        """set data as list of Vacancy objects for saving"""
         self.datalist = datalist
 
     @abstractmethod
@@ -35,17 +36,27 @@ class JSONSaver(ABCSaver):
         return self.deserialize_json_to_vacancy(data)
 
     def write(self):
+        """
+        write file (self.filename)
+        :return: none
+        """
         list_for_write = self.serialize_vacancy_to_json()
         src.utils.write_to_json_file(self.filename, list_for_write)
 
     @light_print_time_to_work
     def serialize_vacancy_to_json(self):
+        """return all vacancies data in json format for writing"""
         list_for_write = []
         for vac in self.datalist:
             list_for_write.append(vac.get_json())
         return list_for_write
 
     def deserialize_json_to_vacancy(self, data) -> list[Vacancy]:
+        """
+        fill list of Vacancy objects from json-data format
+        :param data: json-data
+        :return: list of Vacancy-class objects
+        """
         vacancy_list = []
         if data is not None:
             for item in data:

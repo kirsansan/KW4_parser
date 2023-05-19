@@ -3,6 +3,7 @@ from src.vacancy import Vacancy
 
 
 class VacancyListView:
+    """ list of Vacancy-objects as data model"""
 
     def __init__(self):
         self.__max_count_object_print = MAX_COUNT_VACANCY_FOR_USER_DISPLAY
@@ -19,6 +20,7 @@ class VacancyListView:
             self.__max_count_object_print = num
 
     def print_all(self, data):
+        """Print all what I know about vacancies"""
         if data:
             for i in data:
                 print(i)
@@ -26,6 +28,7 @@ class VacancyListView:
             print("vacancy list is empty yet")
 
     def print_ext_mode(self, data: list[Vacancy]):
+        """beauty printing information"""
         counter = 0
         print("===============start of report=================")
         if data:
@@ -44,6 +47,8 @@ class VacancyListView:
         print("================end of report==================")
 
     def set_display_lines_dialog(self):
+        """set maximum string for display information
+        actual for print_ext_mode"""
         print("-----------------------")
         print("Enter maximum of lines for display")
         tmp_input = input(">")
@@ -51,7 +56,10 @@ class VacancyListView:
             self.__max_count_object_print = int(tmp_input.split()[0])
         print(f"OK. now maximum of lines for display is {self.__max_count_object_print}")
 
-    def set_fiters_dialog(self):
+    def set_filters_dialog(self):
+        """dialog for setting filters
+        actually I can extend this function, but ... I am so lazy =)))
+        let it be with two arguments"""
         print("-----------------------")
         print("Enter keyword for filter display")
         tmp_input = input(">")

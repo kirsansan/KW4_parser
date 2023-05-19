@@ -7,6 +7,7 @@ class SetParamView:
 
 
     def dialog(self):
+        """dialog for set parameters by user"""
         print("-----------------------")
         print("Enter keyword for request vacancies from API")
         tmp_input = input(">")

@@ -7,9 +7,12 @@ class VacancyModel:
         self.__all: list[Vacancy] = []
 
     def sorting(self):
+        """ method for feature. currently under construct"""
         ...
 
     def replace(self, new):
+        """ update all information
+        call this method before write new data"""
         if new:
             if type(new) == list and type(new[0]) == Vacancy:
                 self.__all = []
@@ -18,6 +21,8 @@ class VacancyModel:
             self.__all = []
 
     def extend(self, new):
+        """Extend old data with new
+         also using before writing"""
         if type(new) == list and type(new[0]) == Vacancy:
             self.__all.extend(new)
 
@@ -30,6 +35,10 @@ class VacancyModel:
         self.replace(value)
 
     def filter_by_strings(self, keys, vacancies_for_search=None) -> list[Vacancy]:
+        """ Filter all data by strings 'keys'
+        only elements which insert string with words from 'keys'' will be able to safe
+        ::param:: keys is a list(tuples) of strings
+        ::return:: new list of Vacancy-calss objects (therefore reduce data)"""
         tmp_vacancy_list = []
         if not vacancies_for_search:
             vacancies_for_search = self.__all
@@ -41,6 +50,10 @@ class VacancyModel:
         return tmp_vacancy_list
 
     def filter_by_salary(self, salary_key: int, vacancies_for_search=None) -> list[Vacancy]:
+        """ Filter all data by salary_min
+        only elements which insert salary_min more than 'salary_key' will be able to safe
+        ::param:: salary_key as integer
+        ::return:: new list of Vacancy-calss objects (therefore reduce data)"""
         tmp_vacancy_list = []
         if not vacancies_for_search:
             vacancies_for_search = self.__all

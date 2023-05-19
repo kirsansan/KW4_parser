@@ -15,7 +15,7 @@ class VacancyController:
         return self.view.print_ext_mode(self.model.all)
 
     def set_and_print_select(self):
-        self.view.set_fiters_dialog()
+        self.view.set_filters_dialog()
         prepared_for_print = self.model.filter_by_strings(self.view.filter_keyword.split())
         prepared_for_print = self.model.filter_by_salary(self.view.filter_by_salary, prepared_for_print)
         self.view.print_ext_mode(prepared_for_print)
