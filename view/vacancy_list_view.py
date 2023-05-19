@@ -6,6 +6,8 @@ class VacancyListView:
 
     def __init__(self):
         self.__max_count_object_print = MAX_COUNT_VACANCY_FOR_USER_DISPLAY
+        self.filter_keyword = None
+        self.filter_by_salary = None
 
     @property
     def max_lines_print(self):
@@ -48,3 +50,15 @@ class VacancyListView:
         if len(tmp_input) > 0 and tmp_input.split()[0].isdigit():
             self.__max_count_object_print = int(tmp_input.split()[0])
         print(f"OK. now maximum of lines for display is {self.__max_count_object_print}")
+
+    def set_fiters_dialog(self):
+        print("-----------------------")
+        print("Enter keyword for filter display")
+        tmp_input = input(">")
+        self.filter_keyword = tmp_input
+        print("Enter threshold for minimal salary filter display")
+        tmp_input = input(">")
+        if len(tmp_input) > 0 and tmp_input.split()[0].isdigit():
+            self.filter_by_salary = int(tmp_input.split()[0])
+        print(f"OK. now we will be filtered for {self.filter_keyword} with minimal salary {self.filter_by_salary}")
+

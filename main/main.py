@@ -1,9 +1,14 @@
+from controllers.hhsj_controller import HHSJController
 from src.model import *
 from src.savers import *
 from models.vacancy_model import VacancyModel
 from view.vacancy_list_view import VacancyListView
 from view.set_param_view import SetParamView
 from controllers.vacancy_controller import VacancyController
+from controllers.hh_controller import HHController
+from controllers.sj_controller import SJController
+from controllers.saver_controller import SaverController
+from view.help_view import Helper
 
 
 def read_big_apiHH():
@@ -87,7 +92,7 @@ def router_doing(commands: str):
     #if command_splitted not in self.controllers.keys():
     #    return
 
-    if command_splitted == "setParam":
+    if command_splitted == "setparam":
         global main_request
         main_request = set_main_request_view.dialog()
         model_hh.set_params(main_request)
@@ -97,121 +102,56 @@ def router_doing(commands: str):
         print("parameters for HH:", model_hh.params)
         print("parameters for SJ:", model_sj.params)
         return
-    elif command_splitted == "callHH":
-        model_hh.get_big_data_step_by_step(files_write_flag=False)
-        model_hh.write_to_file(FILE_FOR_WRITE_RAW_DATA)
-        vl = model_hh.get_parsed_data()
-        saver = JSONSaver(FILE_FOR_VACANCY_JSON, vl)
-        saver.write()
-        return
-    elif command_splitted == "callSJ":
-        model_sj.get_big_data_step_by_step(files_write_flag=False)
-        model_sj.write_to_file(FILE_FOR_WRITE_RAW_DATA_SJ)
-        vl = model_sj.get_parsed_data()
-        saver = JSONSaver(FILE_FOR_VACANCY_JSON, vl)
-        saver.write()
-        return
-    elif command_splitted == "callBoth":
-        model_hh.get_big_data_step_by_step(files_write_flag=False)
-        model_hh.write_to_file(FILE_FOR_WRITE_RAW_DATA_SJ)
-        model_sj.get_big_data_step_by_step(files_write_flag=False)
-        model_sj.write_to_file(FILE_FOR_WRITE_RAW_DATA_SJ)
-        vl = model_hh.get_parsed_data()
-        vl.extend(model_sj.get_parsed_data())
-        saver = JSONSaver(FILE_FOR_VACANCY_JSON, vl)
-        saver.write()
-        return
-    # elif command_splitted == "readRAW":
+    elif command_splitted == "callhh":
+        return hh_controller.call()
+    elif command_splitted == "callsj":
+        return sj_controller.call()
+    elif command_splitted == "callboth":
+        return hhsj_controller.call()
+    # elif command_splitted == "readraw":
     #     return self.controllers["readRAW"]
-    elif command_splitted == "readJSON":
-        saver = JSONSaver(FILE_FOR_VACANCY_JSON)
-        model_vacancy.replace(saver.read())
-        return
-    # elif command_splitted == "select":
-    #     return self.controllers["select"]
-    # elif command_splitted == "setKEY":
-    #     return self.controllers["setKEY"]
-    elif command_splitted == "setFilter":
-        return vacancy_view
-    elif command_splitted == "ViewVAC":
-        return vacancy_controller.print_all()
+    elif command_splitted == "readjson":
+        return saver_controller.read()
+        # saver = JSONSaver(FILE_FOR_VACANCY_JSON)
+        # model_vacancy.replace(saver.read())
+    elif command_splitted == "select":
+        return vacancy_controller.set_and_print_select()
+    elif command_splitted == "viewlist":
+        saver_controller.read()
+        return vacancy_controller.print_ext()
+    elif command_splitted == "help":
+        return helper.print_help()
 
 
 if __name__ == '__main__':
 
     main_request = {"text": "python", "area": 2}
 
+    # init models
     model_hh = Model_HH(main_request)
     model_sj = Model_SuperJob(main_request)
     model_vacancy = VacancyModel()
     model_json = JSONSaver(FILE_FOR_VACANCY_JSON, model_vacancy.all)
 
+    # init views
     vacancy_view = VacancyListView()
     set_main_request_view = SetParamView()
 
-    # controller_hh = Controller_HH(model_hh, model_vacancy)
-    # controller_sj = Controller_SJ(model_sj)
-    # controller_json = Controller_Saver(model_json, model_vacancy)
-    # controller_vac = Controller_Vac(model_vacancy, vacancy_view)
-
+    # init controllers
     vacancy_controller = VacancyController(model_vacancy, vacancy_view)
-    # vacancy_list_view = Vacancy_ListView(controller_hh, controller_)
+    hh_controller = HHController(model_hh, model_json)
+    sj_controller = SJController(model_sj, model_json)
+    hhsj_controller = HHSJController(model_hh, model_sj, model_json)
+    saver_controller = SaverController(model_vacancy, model_json)
 
+    # init helper
+    helper = Helper()
+
+    # interface
     while True:
-        print("use commands: setParam, callHH, callJS, callBoth, readRAW, readJSON, ViewVAC")
+        print("use commands: setparam, info, callhh, callsj, callboth, readraw, readjson, viewlist, select, help")
         user_input = input("What do you want? >")
         if user_input.lower() == 'stop':
             quit(0)
         router_doing(user_input)
 
-
-
-
-
-
-    # read_big_apiHH()
-    # read_raw_fileHH()
-    # read_vacancy_data_file()
-
-    # read_big_apiSJ()
-    # read_raw_fileSJ()
-
-    #read_both_API()
-
-
-
-    # model = VacancyModel()
-    # tmp = read_vacancy_data_file()
-    # model.all = tmp
-    # print(len(tmp))
-    # print(len(model.all))
-    #
-    # view = VacancyListView()
-    # #view.print_all(model.all)
-    # # view.print_ext_mode(model.all)
-    #
-    # view.print_ext_mode(model.filter_by_strings("математическое".split()))
-    # b = model.filter_by_salary(180_000)
-    # view.print_ext_mode(b)
-    # с = model.filter_by_strings("shell".split(), b)
-    # view.print_ext_mode(с)
-    #
-    # view_set = SetParamView()
-    # parameters = view_set.dialog()
-    # print(parameters)
-
-
-
-    # filter_words = input("Введите ключевые слова для фильтрации вакансий: ").split()
-    # print(filter_words)
-    # v1 = Vacancy("asas", "desc1", 1, None, "url")
-    # v2 = Vacancy("bsbs", "desc2", None, None, "url")
-    # print(v1 > v2)
-
-
-    # m1.get_data_from_API()
-    # # m1.print_content()
-
-    # m1.write_to_file()
-    # m1.load_from_file()
-    # m1.print_content()

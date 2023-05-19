@@ -57,7 +57,7 @@ class Model_HH(Model):
         self.connect_to_API()
         return self.content
 
-    def connect_to_API(self, start_page=0, per_page=100):
+    def connect_to_API(self, start_page=0, per_page=MAX_COUNT_VACANCY_FOR_ONE_API_PAGE):
         """
         we need to create request such as 'https://api.hh.ru/vacancies?text=java&area=1'
         :return:

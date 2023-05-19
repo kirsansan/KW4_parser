@@ -10,9 +10,12 @@ class VacancyModel:
         ...
 
     def replace(self, new):
-        if type(new) == list and type(new[0]) == Vacancy:
+        if new:
+            if type(new) == list and type(new[0]) == Vacancy:
+                self.__all = []
+                self.__all.extend(new)
+        else:
             self.__all = []
-            self.__all.extend(new)
 
     def extend(self, new):
         if type(new) == list and type(new[0]) == Vacancy:
