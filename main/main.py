@@ -14,11 +14,13 @@ from view.help_view import Helper
 def router_doing(commands: str):
     """
     You can use commands like
+    setparam, info, callhh, callsj, callboth, readraw, readjson, viewlist, select, help
+
+    example usage: setparam, info, callboth, readjson, viewlist, select
+
     """
 
     command_splitted = commands.strip().split()[0]
-    # if command_splitted not in self.controllers.keys():
-    #    return
 
     if command_splitted == "setparam":
         global main_request
@@ -37,11 +39,9 @@ def router_doing(commands: str):
     elif command_splitted == "callboth":
         return hhsj_controller.call()
     # elif command_splitted == "readraw":
-    #     return self.controllers["readRAW"]
+    #     return hhsj_controllers.readraw
     elif command_splitted == "readjson":
         return saver_controller.read()
-        # saver = JSONSaver(FILE_FOR_VACANCY_JSON)
-        # model_vacancy.replace(saver.read())
     elif command_splitted == "select":
         return vacancy_controller.set_and_print_select()
     elif command_splitted == "viewlist":

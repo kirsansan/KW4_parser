@@ -55,7 +55,7 @@ def request_from_api():
         # time.sleep(3)
         # flash("All requests has just done")
         # flash("You will redirect for working with local files")
-    return render_template('request_api.html', menu=site_menu, mytext=['use code: 1- moscow, 2 - st.peterburg'])
+    return render_template('request_api.html', menu=site_menu, mytext=['use code: 1- moscow, 2 - st.petersburg'])
 
 
 @app.route('/test')
