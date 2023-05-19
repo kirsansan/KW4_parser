@@ -1,77 +1,12 @@
 from src.model import *
 from src.savers import *
+from src.router import Router
+from controller.controller import *
+from models.vacancy_list import VacancyModel
+from view.vacancy_list_view import VacancyListView
 
 
-def read_big_apiHH():
-    m1 = Model_HH({"text": "python", "area": 2})
-    m1.get_big_data_step_by_step(files_write_flag=True)
-    # m1.write_to_file(FILE_FOR_WRITE_RAW_DATA)
-    vl = m1.get_parsed_data()
-    saver = JSONSaver(FILE_FOR_VACANCY_JSON, vl)
-    saver.write()
 
-
-def read_big_apiSJ():
-    m4 = Model_SuperJob({"text": "python", "area": 0})
-    # m4.connect_to_API(0, 100)
-    m4.get_big_data_step_by_step(files_write_flag=True)
-    # m4.print_content()
-    # m4.write_to_file(FILE_FOR_WRITE_RAW_DATA_SJ)
-    # m1.get_big_data_step_by_step(files_write_flag=True)
-    vl = m4.get_parsed_data()
-    # print(len(vl))
-    # [print(v) for v in vl]
-
-    # saver = JSONSaver(FILE_FOR_VACANCY_JSON, vl)
-    # saver.write()
-
-
-def read_both_API():
-    m1 = Model_HH({"text": "python", "area": 2})
-    m1.get_big_data_step_by_step(files_write_flag=True)
-    # m1.write_to_file(FILE_FOR_WRITE_RAW_DATA)
-    m4 = Model_SuperJob({"text": "python", "area": 2})
-    m4.get_big_data_step_by_step(files_write_flag=True)
-
-    vl = m1.get_parsed_data()
-    vl.extend(m4.get_parsed_data())
-
-    saver = JSONSaver(FILE_FOR_VACANCY_JSON, vl)
-    saver.write()
-
-
-def print_big_apiHH():
-    m1 = Model_HH({"text": "python", "area": 2})
-    m1.get_big_data_step_by_step(files_write_flag=True)
-    vl = m1.vacancy_list
-    print(len(vl))
-    [print(v) for v in vl]
-
-
-def read_vacancy_data_file():
-    saver = JSONSaver(FILE_FOR_VACANCY_JSON)
-    vvl: list[Vacancy] = saver.read()
-    # print(vvl)
-    vvl.sort(reverse=True)
-    print("================================================================")
-    print(vvl)
-
-
-def read_raw_fileHH():
-    m2 = Model_HH({"text": "python"})
-    m2.load_from_file(FILE_FOR_WRITE_RAW_DATA)
-    # m2.print_content()
-    m2.get_parsed_data()
-    print(m2.vacancy_list)
-
-
-def read_raw_fileSJ():
-    m3 = Model_SuperJob({"text": "python"})
-    m3.load_from_file(FILE_FOR_WRITE_RAW_DATA_SJ)
-    # m2.print_content()
-    m3.get_parsed_data()
-    print(m3.vacancy_list)
-    print(len(m3.vacancy_list))
 
 
 if __name__ == '__main__':
@@ -82,7 +17,7 @@ if __name__ == '__main__':
     # read_big_apiSJ()
     # read_raw_fileSJ()
 
-    read_both_API()
+    # read_both_API()
 
     # filter_words = input("Введите ключевые слова для фильтрации вакансий: ").split()
     # print(filter_words)
@@ -97,3 +32,31 @@ if __name__ == '__main__':
     # m1.write_to_file()
     # m1.load_from_file()
     # m1.print_content()
+
+    main_request = {"text": "python", "area": 2}
+
+    model_hh = Model_HH(main_request)
+    model_sj = Model_SuperJob(main_request)
+    model_vacancy = VacancyModel()
+    model_json = JSONSaver(FILE_FOR_VACANCY_JSON, model_vacancy.all)
+
+    vacancy_view = VacancyListView()
+
+    controller_hh = Controller_HH(model_hh, model_vacancy)
+    controller_sj = Controller_SJ(model_sj)
+    controller_json = Controller_Saver(model_json, model_vacancy)
+    controller_vac = Controller_Vac(model_vacancy, vacancy_view)
+
+    # vacancy_list_view = Vacancy_ListView(controller_hh, controller_)
+
+    router = Router({"callHH": controller_hh,
+                     "callSJ": controller_sj,
+                     "readJSON": controller_json,
+                     "ViewVAC": controller_vac})
+
+    while True:
+        print("use commands: callHH, callJS, readRAW, readJSON, ViewVAC")
+        user_input = input(">")
+        if user_input.lower() == 'stop':
+            quit(0)
+        router.doing(user_input)

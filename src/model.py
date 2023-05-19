@@ -57,7 +57,7 @@ class Model_HH(Model):
         self.connect_to_API()
         return self.content
 
-    def connect_to_API(self, start_page=0, per_page=100):
+    def connect_to_API(self, start_page=0, per_page=MAX_COUNT_VACANCY_FOR_ONE_API_PAGE):
         """
         we need to create request such as 'https://api.hh.ru/vacancies?text=java&area=1'
         :return:
@@ -95,11 +95,11 @@ class Model_HH(Model):
         fill self.vacancy_list with API
         no returns"""
         steps = 0
-        self.connect_to_API(19, 100)  # we need to know how many steps will be, so - see in tail
+        self.connect_to_API(19, MAX_COUNT_VACANCY_FOR_ONE_API_PAGE)  # we need to know how many steps will be, so - see in tail
         if self.content["items"] == []:
             steps = self.content.get("pages")
         for i in range(0, steps):
-            self.connect_to_API(i, 100)
+            self.connect_to_API(i, MAX_COUNT_VACANCY_FOR_ONE_API_PAGE)
         self.get_parsed_data()
         if files_write_flag:
             self.write_to_file(FILE_FOR_WRITE_RAW_DATA)
@@ -111,7 +111,7 @@ class Model_SuperJob(Model):
         self.connect_to_API()
         return self.content
 
-    def connect_to_API(self, start_page=5, count=100):
+    def connect_to_API(self, start_page=5, count=MAX_COUNT_VACANCY_FOR_ONE_API_PAGE):
         """
         we need to create request such as 'https://api.superjob.ru/2.0/vacancies/?t=4&count=100'
         :return:
@@ -148,13 +148,13 @@ class Model_SuperJob(Model):
         fill self.vacancy_list with API
         no returns"""
         steps = 0
-        self.connect_to_API(0, 100)  # we need to know how many steps will be
+        self.connect_to_API(0, MAX_COUNT_VACANCY_FOR_ONE_API_PAGE)  # we need to know how many steps will be
         if self.content["objects"] != []:
             # print(self.content)
             total: int = self.content.get("total")
-            steps = (total // 100)
+            steps = (total // MAX_COUNT_VACANCY_FOR_ONE_API_PAGE)
         for i in range(1, steps):
-            self.connect_to_API(i, 100)
+            self.connect_to_API(i, MAX_COUNT_VACANCY_FOR_ONE_API_PAGE)
         self.get_parsed_data()
         if files_write_flag:
             self.write_to_file(FILE_FOR_WRITE_RAW_DATA_SJ)
